@@ -1,0 +1,779 @@
+1
+00:00:00,300 --> 00:00:03,046
+The Bank of England has just put interest rates
+
+2
+00:00:03,046 --> 00:00:04,798
+up by a quarter of a per cent.
+
+3
+00:00:04,798 --> 00:00:08,011
+On a two-hundred-thousand-pound mortgage, that can mean
+
+4
+00:00:08,011 --> 00:00:10,523
+about twenty-nine pounds more, every month.
+
+5
+00:00:10,523 --> 00:00:12,859
+Here's where that number comes from, why
+
+6
+00:00:12,859 --> 00:00:15,138
+it happened, and who actually feels it.
+
+7
+00:00:18,940 --> 00:00:21,680
+Last time, we saw how a mortgage is built.
+
+8
+00:00:21,680 --> 00:00:25,399
+Today, why rates change, and what a change actually does.
+
+9
+00:00:25,399 --> 00:00:28,595
+We'll follow one rate change all the way through.
+
+10
+00:00:28,595 --> 00:00:31,139
+Why the Bank of England made it, how it
+
+11
+00:00:31,139 --> 00:00:33,945
+travels to your lender, and what it does to
+
+12
+00:00:33,945 --> 00:00:37,141
+your mortgage, your savings and your investments.
+
+13
+00:00:37,141 --> 00:00:40,729
+By the end, you'll know what changes for you, and when.
+
+14
+00:00:40,729 --> 00:00:43,861
+As always, this is a simple example, not advice.
+
+15
+00:00:45,060 --> 00:00:47,997
+So first, why did the Bank raise rates at all?
+
+16
+00:00:47,997 --> 00:00:51,062
+Its job is to keep inflation, the speed at which
+
+17
+00:00:51,062 --> 00:00:53,744
+prices rise, close to two per cent a year.
+
+18
+00:00:53,744 --> 00:00:56,809
+Inflation is measured by comparing the cost of a
+
+19
+00:00:56,809 --> 00:00:59,937
+typical basket of things people buy, from food to
+
+20
+00:00:59,937 --> 00:01:02,108
+fuel to rent, with a year earlier.
+
+21
+00:01:02,108 --> 00:01:06,067
+In September, that basket cost three and a half per cent more.
+
+22
+00:01:06,067 --> 00:01:08,365
+Picture a hundred-pound weekly shop.
+
+23
+00:01:08,365 --> 00:01:10,664
+A year later, the same trolley costs
+
+24
+00:01:10,664 --> 00:01:12,771
+a hundred and three pounds fifty.
+
+25
+00:01:12,771 --> 00:01:14,623
+A big part of that is energy.
+
+26
+00:01:14,623 --> 00:01:17,368
+Oil and gas have climbed sharply this year,
+
+27
+00:01:17,368 --> 00:01:20,306
+and that feeds into fuel, household bills, and
+
+28
+00:01:20,306 --> 00:01:22,668
+the cost of making almost everything.
+
+29
+00:01:22,668 --> 00:01:25,988
+The Bank expects inflation to keep rising, to around
+
+30
+00:01:25,988 --> 00:01:28,606
+five per cent by the middle of next year.
+
+31
+00:01:29,800 --> 00:01:33,680
+Raising interest rates is its main tool for slowing that down.
+
+32
+00:01:33,680 --> 00:01:37,060
+When borrowing costs more and saving pays more, people
+
+33
+00:01:37,060 --> 00:01:39,751
+and businesses tend to spend a little less.
+
+34
+00:01:39,751 --> 00:01:42,504
+Less spending means less pressure on prices.
+
+35
+00:01:42,504 --> 00:01:45,133
+Think of it as easing off the accelerator.
+
+36
+00:01:45,133 --> 00:01:48,825
+The car doesn't stop straight away, but it slows over time.
+
+37
+00:01:48,825 --> 00:01:51,015
+That's why a rate change can take a
+
+38
+00:01:51,015 --> 00:01:53,206
+year or more to work through fully.
+
+39
+00:01:54,410 --> 00:01:57,486
+The decision is made by the Bank's Monetary Policy
+
+40
+00:01:57,486 --> 00:02:00,623
+Committee, nine people who meet eight times a year.
+
+41
+00:02:00,623 --> 00:02:03,576
+On the fifth of November, eight of them voted to
+
+42
+00:02:03,576 --> 00:02:06,221
+raise Bank Rate by a quarter of a per cent,
+
+43
+00:02:06,221 --> 00:02:08,989
+from three point seven five to four per cent.
+
+44
+00:02:08,989 --> 00:02:12,311
+The ninth wanted to go further, to four and a quarter.
+
+45
+00:02:12,311 --> 00:02:15,264
+It was the first rise since twenty twenty-three.
+
+46
+00:02:15,264 --> 00:02:17,540
+Bank Rate is what the Bank pays banks
+
+47
+00:02:17,540 --> 00:02:19,447
+on the money they keep with it.
+
+48
+00:02:19,447 --> 00:02:23,876
+So when it rises, borrowing gets more expensive right across the system.
+
+49
+00:02:25,080 --> 00:02:28,573
+For context, five years ago Bank Rate was close to zero.
+
+50
+00:02:28,573 --> 00:02:31,317
+It climbed to five and a quarter per cent in
+
+51
+00:02:31,317 --> 00:02:35,246
+twenty twenty-three, the highest in fifteen years, and had been
+
+52
+00:02:35,246 --> 00:02:38,489
+cut back to three point seven five before this rise.
+
+53
+00:02:38,489 --> 00:02:41,669
+So four per cent isn't high by history's standards.
+
+54
+00:02:41,669 --> 00:02:44,414
+What matters is the change of direction, and
+
+55
+00:02:44,414 --> 00:02:46,971
+that's what lenders and markets react to.
+
+56
+00:02:48,170 --> 00:02:50,782
+Think of it as a tap at the top of a pipe.
+
+57
+00:02:50,782 --> 00:02:52,772
+Turn it up, and the change flows
+
+58
+00:02:52,772 --> 00:02:54,824
+down to lenders, and then to you.
+
+59
+00:02:54,824 --> 00:02:57,809
+But it doesn't reach everyone at the same speed.
+
+60
+00:02:59,010 --> 00:03:01,500
+If your mortgage is a tracker, it follows
+
+61
+00:03:01,500 --> 00:03:04,597
+Bank Rate directly, usually from your next payment.
+
+62
+00:03:04,597 --> 00:03:07,087
+Trackers are Bank Rate plus a set margin,
+
+63
+00:03:07,087 --> 00:03:08,969
+say one and a quarter per cent.
+
+64
+00:03:08,969 --> 00:03:11,945
+So three point seven five gave you five per cent,
+
+65
+00:03:11,945 --> 00:03:14,495
+and four now gives you five and a quarter.
+
+66
+00:03:14,495 --> 00:03:17,349
+A standard variable rate is set by your lender.
+
+67
+00:03:17,349 --> 00:03:19,960
+It usually follows, but it doesn't have to,
+
+68
+00:03:19,960 --> 00:03:22,025
+and not always by the same amount.
+
+69
+00:03:22,025 --> 00:03:26,458
+Take two hundred thousand pounds over twenty-five years at five per cent.
+
+70
+00:03:26,458 --> 00:03:31,255
+That's one thousand, one hundred and sixty-nine pounds, eighteen pence a month.
+
+71
+00:03:31,255 --> 00:03:33,442
+At five and a quarter per cent, it's
+
+72
+00:03:33,442 --> 00:03:36,903
+one thousand, one hundred and ninety-eight pounds, fifty.
+
+73
+00:03:36,903 --> 00:03:39,818
+Twenty-nine pounds, thirty-two more every month.
+
+74
+00:03:39,818 --> 00:03:43,158
+That's roughly two takeaway coffees a week, every week,
+
+75
+00:03:43,158 --> 00:03:45,344
+for as long as the rate stays there.
+
+76
+00:03:45,344 --> 00:03:48,016
+About three hundred and fifty pounds a year.
+
+77
+00:03:49,210 --> 00:03:50,652
+And over the whole loan?
+
+78
+00:03:50,652 --> 00:03:53,115
+Remember from last time, at five per cent
+
+79
+00:03:53,115 --> 00:03:55,938
+this mortgage costs about one hundred and fifty
+
+80
+00:03:55,938 --> 00:03:58,522
+thousand, eight hundred pounds in interest.
+
+81
+00:03:58,522 --> 00:04:00,444
+If the rate stayed at five and a
+
+82
+00:04:00,444 --> 00:04:03,328
+quarter for all twenty-five years, that would be
+
+83
+00:04:03,328 --> 00:04:06,692
+about one hundred and fifty-nine thousand, five hundred.
+
+84
+00:04:06,692 --> 00:04:09,636
+Nearly eight thousand, eight hundred pounds more.
+
+85
+00:04:09,636 --> 00:04:11,678
+That's about the price of a decent
+
+86
+00:04:11,678 --> 00:04:13,661
+used car, from one quarter point.
+
+87
+00:04:14,860 --> 00:04:16,635
+Here's a handy rule of thumb.
+
+88
+00:04:16,635 --> 00:04:21,409
+On a twenty-five-year repayment mortgage, each quarter-point rise adds roughly
+
+89
+00:04:21,409 --> 00:04:24,960
+fifteen pounds a month for every hundred thousand you owe.
+
+90
+00:04:24,960 --> 00:04:27,959
+So about twenty-two pounds on a hundred and fifty
+
+91
+00:04:27,959 --> 00:04:31,448
+thousand, and about forty-four on three hundred thousand.
+
+92
+00:04:32,650 --> 00:04:35,515
+If you're on a fixed deal, nothing changes today.
+
+93
+00:04:35,515 --> 00:04:38,029
+Your payment is locked until the deal ends.
+
+94
+00:04:38,029 --> 00:04:40,894
+But lenders price new fixed deals partly on where
+
+95
+00:04:40,894 --> 00:04:43,408
+they expect rates to go, so new fixes often
+
+96
+00:04:43,408 --> 00:04:45,630
+get dearer before the Bank even moves.
+
+97
+00:04:45,630 --> 00:04:48,203
+Picture someone who fixed at four and a half
+
+98
+00:04:48,203 --> 00:04:50,541
+per cent two years ago on the same loan.
+
+99
+00:04:50,541 --> 00:04:53,406
+They've been paying one thousand, one hundred and
+
+100
+00:04:53,406 --> 00:04:56,037
+eleven pounds, sixty-six a month, and now owe
+
+101
+00:04:56,037 --> 00:04:58,493
+about one hundred and ninety-one thousand.
+
+102
+00:04:58,493 --> 00:05:00,481
+If the best rate on offer today is
+
+103
+00:05:00,481 --> 00:05:02,820
+five and a quarter, their new payment is
+
+104
+00:05:02,820 --> 00:05:06,094
+about one thousand, one hundred and ninety-three pounds.
+
+105
+00:05:06,094 --> 00:05:08,608
+That's eighty-one pounds a month more, from
+
+106
+00:05:08,608 --> 00:05:11,181
+changes that happened while they were fixed.
+
+107
+00:05:12,380 --> 00:05:14,301
+So here's a question for you.
+
+108
+00:05:14,301 --> 00:05:18,540
+Is your mortgage fixed or variable, and when does your deal end?
+
+109
+00:05:18,540 --> 00:05:20,129
+Tell me in the comments.
+
+110
+00:05:20,129 --> 00:05:22,646
+It decides when this rise reaches you.
+
+111
+00:05:23,850 --> 00:05:25,473
+And if rates keep climbing?
+
+112
+00:05:25,473 --> 00:05:27,756
+The Bank has said more rises may come.
+
+113
+00:05:27,756 --> 00:05:30,341
+Each extra quarter point adds about another
+
+114
+00:05:30,341 --> 00:05:32,564
+thirty pounds a month on our example.
+
+115
+00:05:32,564 --> 00:05:34,968
+At five and a half per cent, the payment
+
+116
+00:05:34,968 --> 00:05:38,814
+is one thousand, two hundred and twenty-eight pounds, seventeen.
+
+117
+00:05:38,814 --> 00:05:40,918
+At six per cent, it's one thousand,
+
+118
+00:05:40,918 --> 00:05:43,502
+two hundred and eighty-eight pounds, sixty.
+
+119
+00:05:43,502 --> 00:05:46,207
+That's nearly one hundred and twenty pounds a
+
+120
+00:05:46,207 --> 00:05:48,190
+month more than at five per cent.
+
+121
+00:05:48,190 --> 00:05:52,036
+Over a year, about one thousand, four hundred and thirty pounds.
+
+122
+00:05:53,230 --> 00:05:54,528
+So what happens next?
+
+123
+00:05:54,528 --> 00:05:57,062
+The October inflation figure lands on the
+
+124
+00:05:57,062 --> 00:05:59,720
+eighteenth of November, and the Bank's next
+
+125
+00:05:59,720 --> 00:06:02,378
+decision is on the seventeenth of December.
+
+126
+00:06:02,378 --> 00:06:06,458
+If prices are still speeding up, another rise becomes more likely.
+
+127
+00:06:06,458 --> 00:06:08,435
+If they cool, the Bank may hold.
+
+128
+00:06:08,435 --> 00:06:10,784
+Either way, we'll cover it on the day.
+
+129
+00:06:11,990 --> 00:06:14,571
+Savers sit at the other end of the pipe.
+
+130
+00:06:14,571 --> 00:06:17,539
+Ten thousand pounds earning a quarter of a per
+
+131
+00:06:17,539 --> 00:06:20,958
+cent more makes about twenty-five pounds more a year.
+
+132
+00:06:20,958 --> 00:06:23,023
+But this tap often drips slowly.
+
+133
+00:06:23,023 --> 00:06:25,023
+Banks don't have to pass a rise
+
+134
+00:06:25,023 --> 00:06:26,894
+on, and many take their time.
+
+135
+00:06:26,894 --> 00:06:30,443
+Easy-access accounts can change their rate at any time.
+
+136
+00:06:30,443 --> 00:06:32,959
+Fixed-term savings lock a rate in, so a
+
+137
+00:06:32,959 --> 00:06:35,475
+fix taken before the rise won't get it.
+
+138
+00:06:35,475 --> 00:06:38,121
+New fixed-term deals, though, tend to pay
+
+139
+00:06:38,121 --> 00:06:39,863
+a little more after a rise.
+
+140
+00:06:41,060 --> 00:06:42,310
+There's a catch, too.
+
+141
+00:06:42,310 --> 00:06:44,571
+With prices rising at three and a half
+
+142
+00:06:44,571 --> 00:06:46,951
+per cent, savings need to earn more than
+
+143
+00:06:46,951 --> 00:06:48,736
+that just to hold their value.
+
+144
+00:06:48,736 --> 00:06:51,176
+Ten thousand pounds earning four per cent
+
+145
+00:06:51,176 --> 00:06:53,318
+makes four hundred pounds in a year.
+
+146
+00:06:53,318 --> 00:06:56,294
+Take away three and a half per cent inflation, and
+
+147
+00:06:56,294 --> 00:06:59,626
+in real terms you're only about fifty pounds better off.
+
+148
+00:06:59,626 --> 00:07:01,888
+It's like walking up a down escalator.
+
+149
+00:07:01,888 --> 00:07:05,874
+You're moving, but the stairs are carrying you back almost as fast.
+
+150
+00:07:05,874 --> 00:07:09,742
+Earn less than inflation, and your savings are quietly shrinking.
+
+151
+00:07:10,940 --> 00:07:12,623
+What about other borrowing?
+
+152
+00:07:12,623 --> 00:07:15,740
+Most personal loans and car finance are fixed when
+
+153
+00:07:15,740 --> 00:07:18,857
+you take them out, so existing deals don't change.
+
+154
+00:07:18,857 --> 00:07:21,600
+Credit card rates already sit far above Bank
+
+155
+00:07:21,600 --> 00:07:23,969
+Rate, so a quarter point barely shows.
+
+156
+00:07:23,969 --> 00:07:26,836
+New borrowing can get a little dearer, though.
+
+157
+00:07:26,836 --> 00:07:29,143
+And if you rent, you won't see a rate
+
+158
+00:07:29,143 --> 00:07:32,322
+on your bill, but landlords with mortgages feel it,
+
+159
+00:07:32,322 --> 00:07:34,816
+and over time that can show up in rents.
+
+160
+00:07:36,020 --> 00:07:38,767
+Investments feel it too, in a different way.
+
+161
+00:07:38,767 --> 00:07:41,077
+Say you own a ten-year bond that pays
+
+162
+00:07:41,077 --> 00:07:43,824
+four pounds a year for every hundred pounds.
+
+163
+00:07:43,824 --> 00:07:46,945
+If new bonds start paying four pounds twenty-five,
+
+164
+00:07:46,945 --> 00:07:49,629
+nobody will pay the full hundred for yours.
+
+165
+00:07:49,629 --> 00:07:52,439
+Its price drops to about ninety-eight pounds,
+
+166
+00:07:52,439 --> 00:07:54,624
+so its return matches the new ones.
+
+167
+00:07:54,624 --> 00:07:57,683
+Another quarter point, and it's about ninety-six.
+
+168
+00:07:57,683 --> 00:07:59,618
+The flip side is that new money
+
+169
+00:07:59,618 --> 00:08:01,616
+going into bonds now earns more.
+
+170
+00:08:01,616 --> 00:08:05,486
+Shares can wobble too, as borrowing gets dearer for companies.
+
+171
+00:08:05,486 --> 00:08:09,169
+That's part of why markets can jump around on decision day.
+
+172
+00:08:10,370 --> 00:08:11,960
+And it isn't just the UK.
+
+173
+00:08:11,960 --> 00:08:14,694
+In late October, the US Federal Reserve and
+
+174
+00:08:14,694 --> 00:08:17,745
+the European Central Bank both held their rates,
+
+175
+00:08:17,745 --> 00:08:20,861
+and markets are watching their December meetings.
+
+176
+00:08:20,861 --> 00:08:23,849
+Wherever you live, the pipe works the same way.
+
+177
+00:08:25,050 --> 00:08:28,183
+So what's worth knowing about your own position?
+
+178
+00:08:28,183 --> 00:08:29,032
+Three things.
+
+179
+00:08:29,032 --> 00:08:31,512
+First, what kind of mortgage you have,
+
+180
+00:08:31,512 --> 00:08:33,340
+and the date your deal ends.
+
+181
+00:08:33,340 --> 00:08:35,755
+Second, the rate on your savings, and
+
+182
+00:08:35,755 --> 00:08:37,843
+whether it moved after the rise.
+
+183
+00:08:37,843 --> 00:08:41,172
+Third, if you invest, that bond prices dipping when
+
+184
+00:08:41,172 --> 00:08:44,109
+rates rise is normal, and how much depends on
+
+185
+00:08:44,109 --> 00:08:46,329
+how long the bond has left to run.
+
+186
+00:08:46,329 --> 00:08:47,830
+None of that is advice.
+
+187
+00:08:47,830 --> 00:08:50,049
+It's just knowing where you stand.
+
+188
+00:08:51,250 --> 00:08:54,296
+So, a quarter-point rise looks small on paper.
+
+189
+00:08:54,296 --> 00:08:59,063
+On a variable mortgage, it's about twenty-nine pounds a month, and soon.
+
+190
+00:08:59,063 --> 00:09:02,109
+On a fixed deal, nothing, until the deal ends.
+
+191
+00:09:02,109 --> 00:09:04,757
+For savers, a little more, often slowly,
+
+192
+00:09:04,757 --> 00:09:06,810
+and it needs to beat inflation.
+
+193
+00:09:06,810 --> 00:09:09,326
+Next week: what happens when you pay a
+
+194
+00:09:09,326 --> 00:09:12,107
+little extra off your mortgage each month.
+
+195
+00:09:12,107 --> 00:09:14,159
+Subscribe so you don't miss it.
