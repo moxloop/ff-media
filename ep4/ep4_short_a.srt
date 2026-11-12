@@ -1,0 +1,103 @@
+1
+00:00:00,250 --> 00:00:01,620
+Should spare money go
+
+2
+00:00:01,620 --> 00:00:02,729
+on your mortgage,
+
+3
+00:00:02,729 --> 00:00:04,034
+or into investments?
+
+4
+00:00:04,034 --> 00:00:05,469
+One number decides it:
+
+5
+00:00:05,469 --> 00:00:06,708
+your mortgage rate.
+
+6
+00:00:06,708 --> 00:00:08,078
+Overpaying a five per
+
+7
+00:00:08,078 --> 00:00:09,448
+cent mortgage earns a
+
+8
+00:00:09,448 --> 00:00:11,079
+guaranteed five per cent,
+
+9
+00:00:11,079 --> 00:00:12,775
+in interest you never pay.
+
+10
+00:00:12,775 --> 00:00:14,210
+Investing only wins if
+
+11
+00:00:14,210 --> 00:00:15,123
+it beats that,
+
+12
+00:00:15,123 --> 00:00:16,363
+after fees and tax.
+
+13
+00:00:16,363 --> 00:00:17,537
+Take a two hundred
+
+14
+00:00:17,537 --> 00:00:19,233
+thousand pound mortgage at
+
+15
+00:00:19,233 --> 00:00:20,146
+five per cent,
+
+16
+00:00:20,146 --> 00:00:21,581
+and a hundred pounds a
+
+17
+00:00:21,581 --> 00:00:23,408
+month for twenty-five years.
+
+18
+00:00:23,408 --> 00:00:24,908
+If investing earns five
+
+19
+00:00:24,908 --> 00:00:26,213
+per cent after fees,
+
+20
+00:00:26,213 --> 00:00:27,191
+both end level:
+
+21
+00:00:27,191 --> 00:00:28,496
+fifty-nine thousand,
+
+22
+00:00:28,496 --> 00:00:31,040
+five hundred and fifty-one pounds each.
+
+23
+00:00:31,040 --> 00:00:32,345
+Above five per cent,
+
+24
+00:00:32,345 --> 00:00:33,780
+investing pulls ahead.
+
+25
+00:00:33,780 --> 00:00:34,367
+Below it,
+
+26
+00:00:34,367 --> 00:00:35,411
+overpaying wins.
