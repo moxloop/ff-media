@@ -77,7 +77,7 @@ def two_jars(base, d, lt, cam, headline="SAME MONEY,", key_word="TWO JARS", hk="
         col = DISC.get(role, DISC["k"]); filling = t_fill < lt < t_fill + fill_dur - .1 and val > 0
         stroke(d, [(cx - 150, CY + JH + 8), (cx, CY + JH + 5), (cx + 150, CY + JH + 8)], fa(lt, tj + .1, .4), INK, 5, 21 if side == "a" else 23, 1.0)
         jar(base, d, lt, cx, CY, tj, lv[side] * e, col, drops=((1.2 + 1.4 * val / top, t_fill) if filling else None), w=JW, h=JH)
-        tag(base, lt, cx, CY + JH + 84, lab, 40, tj + .3, ROLE[role], _fg(role), -2 if side == "a" else 2, "o", None)
+        tag(base, lt, cx, CY + JH + 104, lab, 40, tj + .3, ROLE[role], _fg(role), -2 if side == "a" else 2, "o", None)
         size = 112 if big_side is None else (136 if big_side == side else 92); fx0 = cx + JW + 44
         if lt >= t_fill:
             T(d, fx0, CY - 40, fmt.format(val * e), size, "a", ROLE[role], "lm", min(1, (lt - t_fill) / .2))

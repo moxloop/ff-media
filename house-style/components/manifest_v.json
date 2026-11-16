@@ -86,7 +86,7 @@
   "preview": "previews/shorts_hooks__number_transform.mp4",
   "still": "stills/shorts_hooks__number_transform.jpg",
   "fit": "PASS",
-  "samples": 28
+  "samples": 56
  },
  {
   "key": "shorts_hooks/two_paths",
@@ -175,7 +175,7 @@
   "preview": "previews/shorts_hooks__two_paths.mp4",
   "still": "stills/shorts_hooks__two_paths.jpg",
   "fit": "PASS",
-  "samples": 30
+  "samples": 61
  },
  {
   "key": "shorts_hooks/myth_vs_reality",
@@ -268,7 +268,7 @@
   "preview": "previews/shorts_hooks__myth_vs_reality.mp4",
   "still": "stills/shorts_hooks__myth_vs_reality.jpg",
   "fit": "PASS",
-  "samples": 30
+  "samples": 61
  },
  {
   "key": "shorts_comparisons/versus_card",
@@ -357,7 +357,7 @@
   "preview": "previews/shorts_comparisons__versus_card.mp4",
   "still": "stills/shorts_comparisons__versus_card.jpg",
   "fit": "PASS",
-  "samples": 28
+  "samples": 56
  },
  {
   "key": "shorts_comparisons/two_jars",
@@ -430,7 +430,7 @@
   "preview": "previews/shorts_comparisons__two_jars.mp4",
   "still": "stills/shorts_comparisons__two_jars.jpg",
   "fit": "PASS",
-  "samples": 30
+  "samples": 61
  },
  {
   "key": "shorts_comparisons/split_screen",
@@ -511,7 +511,7 @@
   "preview": "previews/shorts_comparisons__split_screen.mp4",
   "still": "stills/shorts_comparisons__split_screen.jpg",
   "fit": "PASS",
-  "samples": 28
+  "samples": 56
  },
  {
   "key": "shorts_reveals/stamp",
@@ -572,7 +572,7 @@
   "preview": "previews/shorts_reveals__stamp.mp4",
   "still": "stills/shorts_reveals__stamp.jpg",
   "fit": "PASS",
-  "samples": 23
+  "samples": 45
  },
  {
   "key": "shorts_reveals/rolling_counter",
@@ -641,7 +641,7 @@
   "preview": "previews/shorts_reveals__rolling_counter.mp4",
   "still": "stills/shorts_reveals__rolling_counter.jpg",
   "fit": "PASS",
-  "samples": 25
+  "samples": 51
  },
  {
   "key": "shorts_reveals/circled_figure",
@@ -706,6 +706,6 @@
   "preview": "previews/shorts_reveals__circled_figure.mp4",
   "still": "stills/shorts_reveals__circled_figure.jpg",
   "fit": "PASS",
-  "samples": 25
+  "samples": 51
  }
 ]

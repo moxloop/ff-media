@@ -1,5 +1,1485 @@
 [
  {
+  "key": "hooks/number_transform",
+  "family": "hooks",
+  "name": "number_transform",
+  "kind": "component",
+  "module": "hooks",
+  "func": "number_transform",
+  "use": "Open on a small everyday figure that turns into the big consequence number before the first second is out.",
+  "notes": "",
+  "dur": 5.5,
+  "params": [
+   [
+    "start",
+    "'\u00a3100'"
+   ],
+   [
+    "start_label",
+    "'A MONTH'"
+   ],
+   [
+    "start_value",
+    "100"
+   ],
+   [
+    "result_value",
+    "24000"
+   ],
+   [
+    "title",
+    "('KEEP IT UP FOR', '20 YEARS')"
+   ],
+   [
+    "result_label",
+    "'PAID IN, BEFORE ANY GROWTH'"
+   ],
+   [
+    "picture",
+    "'calendar'"
+   ],
+   [
+    "pic_tag",
+    "'240 MONTHS'"
+   ],
+   [
+    "aside",
+    "'example figures'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "fmt",
+    "None"
+   ],
+   [
+    "t_start",
+    "0.05"
+   ],
+   [
+    "t_shrink",
+    "0.45"
+   ],
+   [
+    "t_result",
+    "0.82"
+   ],
+   [
+    "count",
+    "0.75"
+   ],
+   [
+    "t_swipe",
+    "1.8"
+   ],
+   [
+    "t_title",
+    "2.05"
+   ],
+   [
+    "t_pic",
+    "2.6"
+   ],
+   [
+    "t_label",
+    "3.1"
+   ],
+   [
+    "t_aside",
+    "3.8"
+   ]
+  ],
+  "preview": "previews/hooks__number_transform.mp4",
+  "still": "stills/hooks__number_transform.jpg",
+  "fit": "PASS",
+  "samples": 56
+ },
+ {
+  "key": "hooks/calc_sheet_zoom",
+  "family": "hooks",
+  "name": "calc_sheet_zoom",
+  "kind": "component",
+  "module": "hooks",
+  "func": "calc_sheet_zoom",
+  "use": "Show the working: the calculation sheet with three or four lines, then a push in on the figure that matters as it is spoken.",
+  "notes": "The default camera pushes in on the total line. An episode that highlights another row (key=<row index>) should pass its own camera.",
+  "dur": 6.0,
+  "params": [
+   [
+    "heading",
+    "'FIGURES FORWARD CALCULATION'"
+   ],
+   [
+    "stamp",
+    "'worked example'"
+   ],
+   [
+    "subtitle",
+    "'\u00a3100 a month, every month, for 20 years'"
+   ],
+   [
+    "rows",
+    "(('Paid in each month', '\u00a3100'), ('Each year (\u00d7 12)', '\u00a31,200'), ('Number of years', '20'))"
+   ],
+   [
+    "total_label",
+    "'Paid in altogether'"
+   ],
+   [
+    "total",
+    "'\u00a324,000'"
+   ],
+   [
+    "footer",
+    "'Example figures, for illustration'"
+   ],
+   [
+    "key",
+    "'total'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "picture",
+    "'calculator'"
+   ],
+   [
+    "aside",
+    "'we show the working'"
+   ],
+   [
+    "t_sheet",
+    "0.1"
+   ],
+   [
+    "t_total",
+    "0.6"
+   ],
+   [
+    "t_rows",
+    "(1.0, 1.35, 1.7, 2.05)"
+   ],
+   [
+    "t_rule",
+    "2.3"
+   ],
+   [
+    "t_pic",
+    "1.5"
+   ],
+   [
+    "t_swipe",
+    "3.6"
+   ],
+   [
+    "t_aside",
+    "4.4"
+   ]
+  ],
+  "preview": "previews/hooks__calc_sheet_zoom.mp4",
+  "still": "stills/hooks__calc_sheet_zoom.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "hooks/two_paths",
+  "family": "hooks",
+  "name": "two_paths",
+  "kind": "component",
+  "module": "hooks",
+  "func": "two_paths",
+  "use": "Open a Choice episode: the same money goes down an orange path or a blue path, each ending at its own figure, then the question.",
+  "notes": "left_role / right_role keep the colour meaning: orange = overpay or cost, blue = invest.",
+  "dur": 6.0,
+  "params": [
+   [
+    "start",
+    "'\u00a3100'"
+   ],
+   [
+    "start_label",
+    "'A MONTH'"
+   ],
+   [
+    "left_label",
+    "'PATH ONE'"
+   ],
+   [
+    "left_fig",
+    "'\u00a324,000'"
+   ],
+   [
+    "right_label",
+    "'PATH TWO'"
+   ],
+   [
+    "right_fig",
+    "'\u00a330,000'"
+   ],
+   [
+    "question",
+    "'?'"
+   ],
+   [
+    "ask",
+    "'which path ends ahead?'"
+   ],
+   [
+    "left_pic",
+    "'house'"
+   ],
+   [
+    "right_pic",
+    "'chart'"
+   ],
+   [
+    "left_role",
+    "'o'"
+   ],
+   [
+    "right_role",
+    "'b'"
+   ],
+   [
+    "t_start",
+    "0.08"
+   ],
+   [
+    "t_left",
+    "0.4"
+   ],
+   [
+    "t_right",
+    "0.55"
+   ],
+   [
+    "draw",
+    "0.5"
+   ],
+   [
+    "t_left_fig",
+    "None"
+   ],
+   [
+    "t_right_fig",
+    "None"
+   ],
+   [
+    "t_pics",
+    "1.7"
+   ],
+   [
+    "t_question",
+    "3.2"
+   ],
+   [
+    "t_ask",
+    "4.1"
+   ]
+  ],
+  "preview": "previews/hooks__two_paths.mp4",
+  "still": "stills/hooks__two_paths.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "hooks/myth_vs_reality",
+  "family": "hooks",
+  "name": "myth_vs_reality",
+  "kind": "component",
+  "module": "hooks",
+  "func": "myth_vs_reality",
+  "use": "Open by knocking down a common belief: the myth is crossed out by hand and the real figure drops in highlighted.",
+  "notes": "The myth is on screen at once; the real figure follows at t_figure (default 2.6 s) because it is the reveal.",
+  "dur": 6.0,
+  "params": [
+   [
+    "myth_label",
+    "'PEOPLE SAY'"
+   ],
+   [
+    "myth",
+    "\"\u00a3100 A MONTH WON'T CHANGE MUCH\""
+   ],
+   [
+    "myth_tag",
+    "'MYTH'"
+   ],
+   [
+    "reality_label",
+    "'WHAT THE SUMS SAY'"
+   ],
+   [
+    "reality",
+    "'OVER 20 YEARS IT ADDS UP TO'"
+   ],
+   [
+    "figure",
+    "'\u00a324,000'"
+   ],
+   [
+    "link",
+    "'so we did the sums'"
+   ],
+   [
+    "aside",
+    "'paid in, before any growth'"
+   ],
+   [
+    "picture",
+    "'coins'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "t_myth",
+    "0.1"
+   ],
+   [
+    "t_cross",
+    "0.95"
+   ],
+   [
+    "t_tag",
+    "1.45"
+   ],
+   [
+    "t_reality",
+    "1.9"
+   ],
+   [
+    "t_figure",
+    "2.6"
+   ],
+   [
+    "t_swipe",
+    "3.1"
+   ],
+   [
+    "t_link",
+    "2.25"
+   ],
+   [
+    "t_pic",
+    "3.7"
+   ],
+   [
+    "t_aside",
+    "4.3"
+   ]
+  ],
+  "preview": "previews/hooks__myth_vs_reality.mp4",
+  "still": "stills/hooks__myth_vs_reality.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "transitions/paper_slide",
+  "family": "transitions",
+  "name": "paper_slide",
+  "kind": "transition",
+  "module": "transitions",
+  "func": "paper_slide",
+  "use": "Default scene change. The new sheet slides over the old one; alternate `direction` between scenes.",
+  "notes": "",
+  "dur": 0.8,
+  "params": [
+   [
+    "direction",
+    "(1, 0)"
+   ]
+  ],
+  "preview": "previews/transitions__paper_slide.mp4",
+  "still": "stills/transitions__paper_slide.jpg",
+  "fit": "PASS",
+  "samples": 51
+ },
+ {
+  "key": "transitions/page_turn",
+  "family": "transitions",
+  "name": "page_turn",
+  "kind": "transition",
+  "module": "transitions",
+  "func": "page_turn",
+  "use": "A new chapter or a change of topic: the old sheet lifts at the right edge and turns away like a page, showing its darker underside, with the new scene on the page beneath.",
+  "notes": "`flip=True` turns the page the other way (alternate between scenes). `tilt` slants the fold line.",
+  "dur": 1.0,
+  "params": [
+   [
+    "flip",
+    "False"
+   ],
+   [
+    "tilt",
+    "0.16"
+   ]
+  ],
+  "preview": "previews/transitions__page_turn.mp4",
+  "still": "stills/transitions__page_turn.jpg",
+  "fit": "PASS",
+  "samples": 51
+ },
+ {
+  "key": "transitions/tear_away",
+  "family": "transitions",
+  "name": "tear_away",
+  "kind": "transition",
+  "module": "transitions",
+  "func": "tear_away",
+  "use": "A hard break or a myth being thrown out: the old sheet tears top to bottom along a jagged edge, one piece slides off and the other drops away to reveal the new scene.",
+  "notes": "The tear line is fixed-seed, so it is identical on every render. `flip=True` mirrors it.",
+  "dur": 1.1,
+  "params": [
+   [
+    "flip",
+    "False"
+   ]
+  ],
+  "preview": "previews/transitions__tear_away.mp4",
+  "still": "stills/transitions__tear_away.jpg",
+  "fit": "PASS",
+  "samples": 51
+ },
+ {
+  "key": "transitions/fold",
+  "family": "transitions",
+  "name": "fold",
+  "kind": "transition",
+  "module": "transitions",
+  "func": "fold",
+  "use": "Putting an idea away or closing a section: the old sheet folds up panel by panel toward one side like a leaflet (thirds by default, `parts=2` for in half), revealing the new scene.",
+  "notes": "`parts` = 2 or 3 panels. `flip=True` folds toward the right instead of the left.",
+  "dur": 1.2,
+  "params": [
+   [
+    "parts",
+    "3"
+   ],
+   [
+    "flip",
+    "False"
+   ]
+  ],
+  "preview": "previews/transitions__fold.mp4",
+  "still": "stills/transitions__fold.jpg",
+  "fit": "PASS",
+  "samples": 51
+ },
+ {
+  "key": "charts/line_race",
+  "family": "charts",
+  "name": "line_race",
+  "kind": "component",
+  "module": "charts",
+  "func": "line_race",
+  "use": "Two (or three) options compared over time: the lines race left to right together, each with its label riding the tip, and the one that ends ahead gets the big end value and a handwritten callout.",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "title",
+    "'WHICH ONE'"
+   ],
+   [
+    "title_key",
+    "'ENDS AHEAD?'"
+   ],
+   [
+    "key_role",
+    "'b'"
+   ],
+   [
+    "series",
+    "(('PLAN A', 'b', (0, 12, 8, 30, 24, 52, 46, 76, 90, 80, 58, 64, 50, 60, 88, 80, 118, 110, 150, 142, 200)), ('PLAN B', 'o', (0, 8, 15, 22, 30, 38, 45, 52, 60, 68, 75, 82, 90, 98, 105, 112, 120, 128, 135, 142, 150)))"
+   ],
+   [
+    "fmt",
+    "None"
+   ],
+   [
+    "winner",
+    "None"
+   ],
+   [
+    "callout",
+    "'ends ahead'"
+   ],
+   [
+    "x_label",
+    "'TIME'"
+   ],
+   [
+    "label",
+    "'Illustration, not real returns'"
+   ],
+   [
+    "t_title",
+    "0.2"
+   ],
+   [
+    "t_panel",
+    "0.5"
+   ],
+   [
+    "t_race",
+    "1.2"
+   ],
+   [
+    "race_dur",
+    "2.6"
+   ],
+   [
+    "t_end",
+    "None"
+   ],
+   [
+    "t_callout",
+    "None"
+   ]
+  ],
+  "preview": "previews/charts__line_race.mp4",
+  "still": "stills/charts__line_race.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "charts/waterfall",
+  "family": "charts",
+  "name": "waterfall",
+  "kind": "component",
+  "module": "charts",
+  "func": "waterfall",
+  "use": "Fees, charges or deductions eating into a figure: a whole starting bar, each deduction as an orange block stepping down on its cue, ending on the green 'what you keep' bar with the one big number.",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "title",
+    "'WHERE THE'"
+   ],
+   [
+    "title_key",
+    "'MONEY GOES'"
+   ],
+   [
+    "key_role",
+    "'o'"
+   ],
+   [
+    "start",
+    "('BEFORE FEES', 1000)"
+   ],
+   [
+    "steps",
+    "(('FUND FEE', 150), ('PLATFORM FEE', 100), ('ADVICE FEE', 250))"
+   ],
+   [
+    "end_label",
+    "'WHAT YOU KEEP'"
+   ],
+   [
+    "end_role",
+    "'g'"
+   ],
+   [
+    "start_role",
+    "'k'"
+   ],
+   [
+    "fmt",
+    "None"
+   ],
+   [
+    "aside",
+    "'half of it gone'"
+   ],
+   [
+    "label",
+    "'Illustration, not real returns'"
+   ],
+   [
+    "t_title",
+    "0.2"
+   ],
+   [
+    "t_panel",
+    "0.5"
+   ],
+   [
+    "t_start",
+    "1.1"
+   ],
+   [
+    "t_steps",
+    "None"
+   ],
+   [
+    "t_end",
+    "None"
+   ],
+   [
+    "t_aside",
+    "None"
+   ]
+  ],
+  "preview": "previews/charts__waterfall.mp4",
+  "still": "stills/charts__waterfall.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "charts/timeline_markers",
+  "family": "charts",
+  "name": "timeline_markers",
+  "kind": "component",
+  "module": "charts",
+  "func": "timeline_markers",
+  "use": "A repayment or balance timeline: the year track unrolls, two to four markers pop on their cues with handwritten notes, and the gap between two of them (e.g. years saved) is highlighted as the one big figure.",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "title",
+    "'THE FINISH LINE'"
+   ],
+   [
+    "title_key",
+    "'MOVES'"
+   ],
+   [
+    "key_role",
+    "'o'"
+   ],
+   [
+    "ticks",
+    "('0', '5', '10', '15', '20', '25')"
+   ],
+   [
+    "unit",
+    "'YEARS'"
+   ],
+   [
+    "markers",
+    "((0.0, 'TODAY', 'n', 'start here'), (0.86, 'PAID OFF', 'o', 'with overpayments'), (1.0, 'ORIGINAL END', 'm', 'the plan'))"
+   ],
+   [
+    "span",
+    "(1, 2, '3\u00bd YEARS EARLY', 'g')"
+   ],
+   [
+    "label",
+    "'Illustration, not real figures'"
+   ],
+   [
+    "t_title",
+    "0.2"
+   ],
+   [
+    "t_panel",
+    "0.5"
+   ],
+   [
+    "t_track",
+    "0.9"
+   ],
+   [
+    "track_dur",
+    "1.0"
+   ],
+   [
+    "t_markers",
+    "(1.1, 2.3, 2.9)"
+   ],
+   [
+    "t_span",
+    "3.7"
+   ]
+  ],
+  "preview": "previews/charts__timeline_markers.mp4",
+  "still": "stills/charts__timeline_markers.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "comparisons/versus_card",
+  "family": "comparisons",
+  "name": "versus_card",
+  "kind": "component",
+  "module": "comparisons",
+  "func": "versus_card",
+  "use": "Two named options head to head with one figure each, when the script says 'A or B' and then names the winner.",
+  "notes": "",
+  "dur": 5.5,
+  "params": [
+   [
+    "headline",
+    "'WHICH ONE'"
+   ],
+   [
+    "key_word",
+    "'WINS?'"
+   ],
+   [
+    "hk",
+    "'o'"
+   ],
+   [
+    "a_label",
+    "'OPTION A'"
+   ],
+   [
+    "a_sub",
+    "'AFTER 10 YEARS'"
+   ],
+   [
+    "a_value",
+    "1000"
+   ],
+   [
+    "a_pic",
+    "'house'"
+   ],
+   [
+    "a_role",
+    "'o'"
+   ],
+   [
+    "b_label",
+    "'OPTION B'"
+   ],
+   [
+    "b_sub",
+    "'AFTER 10 YEARS'"
+   ],
+   [
+    "b_value",
+    "2000"
+   ],
+   [
+    "b_pic",
+    "'chart'"
+   ],
+   [
+    "b_role",
+    "'b'"
+   ],
+   [
+    "fmt",
+    "'\u00a3{:,.0f}'"
+   ],
+   [
+    "vs_text",
+    "'VS'"
+   ],
+   [
+    "winner",
+    "'b'"
+   ],
+   [
+    "win_style",
+    "'tag'"
+   ],
+   [
+    "win_text",
+    "'AHEAD'"
+   ],
+   [
+    "win_role",
+    "'g'"
+   ],
+   [
+    "t_head",
+    "0.15"
+   ],
+   [
+    "t_a",
+    "0.7"
+   ],
+   [
+    "t_vs",
+    "1.35"
+   ],
+   [
+    "t_b",
+    "1.6"
+   ],
+   [
+    "t_fig_a",
+    "2.3"
+   ],
+   [
+    "t_fig_b",
+    "2.9"
+   ],
+   [
+    "t_win",
+    "3.8"
+   ]
+  ],
+  "preview": "previews/comparisons__versus_card.mp4",
+  "still": "stills/comparisons__versus_card.jpg",
+  "fit": "PASS",
+  "samples": 56
+ },
+ {
+  "key": "comparisons/two_jars",
+  "family": "comparisons",
+  "name": "two_jars",
+  "kind": "component",
+  "module": "comparisons",
+  "func": "two_jars",
+  "use": "Two pots built from the same money that end at different sizes: the jars fill in proportion to the two figures.",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "headline",
+    "'SAME MONEY,'"
+   ],
+   [
+    "key_word",
+    "'TWO JARS'"
+   ],
+   [
+    "hk",
+    "'b'"
+   ],
+   [
+    "a_label",
+    "'OPTION A'"
+   ],
+   [
+    "a_value",
+    "10000"
+   ],
+   [
+    "a_role",
+    "'o'"
+   ],
+   [
+    "b_label",
+    "'OPTION B'"
+   ],
+   [
+    "b_value",
+    "15000"
+   ],
+   [
+    "b_role",
+    "'b'"
+   ],
+   [
+    "fmt",
+    "'\u00a3{:,.0f}'"
+   ],
+   [
+    "sub",
+    "'AFTER 10 YEARS'"
+   ],
+   [
+    "top_level",
+    "0.9"
+   ],
+   [
+    "diff_note",
+    "None"
+   ],
+   [
+    "t_head",
+    "0.15"
+   ],
+   [
+    "t_jars",
+    "0.7"
+   ],
+   [
+    "t_fill",
+    "1.4"
+   ],
+   [
+    "fill_dur",
+    "2.2"
+   ],
+   [
+    "t_note",
+    "4.2"
+   ]
+  ],
+  "preview": "previews/comparisons__two_jars.mp4",
+  "still": "stills/comparisons__two_jars.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "comparisons/split_screen",
+  "family": "comparisons",
+  "name": "split_screen",
+  "kind": "component",
+  "module": "comparisons",
+  "func": "split_screen",
+  "use": "Two worlds side by side (two people, two choices, before and after): the frame is torn in half and each half carries one figure.",
+  "notes": "",
+  "dur": 5.5,
+  "params": [
+   [
+    "a_head",
+    "'OPTION A'"
+   ],
+   [
+    "a_pic",
+    "'house'"
+   ],
+   [
+    "a_value",
+    "1000"
+   ],
+   [
+    "a_sub",
+    "'EXAMPLE TOTAL'"
+   ],
+   [
+    "a_role",
+    "'o'"
+   ],
+   [
+    "b_head",
+    "'OPTION B'"
+   ],
+   [
+    "b_pic",
+    "'chart'"
+   ],
+   [
+    "b_value",
+    "1500"
+   ],
+   [
+    "b_sub",
+    "'EXAMPLE TOTAL'"
+   ],
+   [
+    "b_role",
+    "'b'"
+   ],
+   [
+    "fmt",
+    "'\u00a3{:,.0f}'"
+   ],
+   [
+    "favour",
+    "None"
+   ],
+   [
+    "shift",
+    "56"
+   ],
+   [
+    "tint",
+    "0.62"
+   ],
+   [
+    "t_split",
+    "0.1"
+   ],
+   [
+    "t_a",
+    "0.8"
+   ],
+   [
+    "t_b",
+    "1.4"
+   ],
+   [
+    "t_fig_a",
+    "2.2"
+   ],
+   [
+    "t_fig_b",
+    "2.8"
+   ],
+   [
+    "t_shift",
+    "3.7"
+   ]
+  ],
+  "preview": "previews/comparisons__split_screen.mp4",
+  "still": "stills/comparisons__split_screen.jpg",
+  "fit": "PASS",
+  "samples": 56
+ },
+ {
+  "key": "evidence/calc_sheet",
+  "family": "evidence",
+  "name": "calc_sheet",
+  "kind": "component",
+  "module": "evidence",
+  "func": "calc_sheet",
+  "use": "The signature 'Figures Forward calculation' sheet in body gear: show the working row by row at the episode's key figure, with one highlighter swipe.",
+  "notes": "Use once at the episode's key figure (and once in the hook). The camera is a calm push to about 1.12, not a pull-out.",
+  "dur": 6.0,
+  "params": [
+   [
+    "title",
+    "'FIGURES FORWARD CALCULATION'"
+   ],
+   [
+    "tagline",
+    "'worked example'"
+   ],
+   [
+    "subtitle",
+    "'\u00a3100 a month for 10 years (120 months)'"
+   ],
+   [
+    "rows",
+    "(('Paid in', '\u00a312,000'), ('Growth at an example 5% a year', '\u00a33,500'), ('Fees taken out', '\u2212\u00a3500'))"
+   ],
+   [
+    "total",
+    "('Ends at', '\u00a315,000')"
+   ],
+   [
+    "key_row",
+    "'total'"
+   ],
+   [
+    "hk",
+    "'o'"
+   ],
+   [
+    "footnote",
+    "'Illustrative figures, rounded'"
+   ],
+   [
+    "side_pic",
+    "'calculator'"
+   ],
+   [
+    "side_note",
+    "'the working, shown'"
+   ],
+   [
+    "t_sheet",
+    "0.15"
+   ],
+   [
+    "t_rows",
+    "None"
+   ],
+   [
+    "t_total",
+    "None"
+   ],
+   [
+    "t_hl",
+    "None"
+   ],
+   [
+    "t_side",
+    "None"
+   ]
+  ],
+  "preview": "previews/evidence__calc_sheet.mp4",
+  "still": "stills/evidence__calc_sheet.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "evidence/payslip",
+  "family": "evidence",
+  "name": "payslip",
+  "kind": "component",
+  "module": "evidence",
+  "func": "payslip",
+  "use": "A generic example payslip or receipt when the script walks through pay, deductions or a bill line by line and singles one line out.",
+  "notes": "Always an obviously made-up document: keep the 'EXAMPLE' tag and never pass a real employer, bank or account number.",
+  "dur": 6.0,
+  "params": [
+   [
+    "headline",
+    "'WHERE DOES'"
+   ],
+   [
+    "key_word",
+    "'IT GO?'"
+   ],
+   [
+    "hk",
+    "'o'"
+   ],
+   [
+    "title",
+    "'EXAMPLE PAYSLIP'"
+   ],
+   [
+    "sub",
+    "'Example employer \u00b7 example month'"
+   ],
+   [
+    "lines",
+    "(('Gross pay', '\u00a33,000.00', 'pay'), ('Tax', '\u2212\u00a3400.00', 'ded'), ('Pension', '\u2212\u00a3150.00', 'ded'), ('Other deduction', '\u2212\u00a350.00', 'ded'))"
+   ],
+   [
+    "net",
+    "('NET PAY', '\u00a32,400.00')"
+   ],
+   [
+    "stamp",
+    "'EXAMPLE'"
+   ],
+   [
+    "footer",
+    "'Illustration only \u00b7 not a real document'"
+   ],
+   [
+    "ring_line",
+    "2"
+   ],
+   [
+    "ring_role",
+    "'o'"
+   ],
+   [
+    "ring_note",
+    "'this line is the one to check'"
+   ],
+   [
+    "side_pic",
+    "'coins'"
+   ],
+   [
+    "t_head",
+    "0.15"
+   ],
+   [
+    "t_slip",
+    "0.6"
+   ],
+   [
+    "t_lines",
+    "None"
+   ],
+   [
+    "t_net",
+    "None"
+   ],
+   [
+    "t_ring",
+    "None"
+   ]
+  ],
+  "preview": "previews/evidence__payslip.mp4",
+  "still": "stills/evidence__payslip.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "evidence/ruler_span",
+  "family": "evidence",
+  "name": "ruler_span",
+  "kind": "component",
+  "module": "evidence",
+  "func": "ruler_span",
+  "use": "A length of time measured out on a paper ruler: mark the span between two points (years saved, months left, time in the market).",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "headline",
+    "'HOW MUCH'"
+   ],
+   [
+    "key_word",
+    "'SOONER?'"
+   ],
+   [
+    "hk",
+    "'g'"
+   ],
+   [
+    "units",
+    "25"
+   ],
+   [
+    "unit_label",
+    "'YEARS'"
+   ],
+   [
+    "major",
+    "5"
+   ],
+   [
+    "a",
+    "20"
+   ],
+   [
+    "b",
+    "25"
+   ],
+   [
+    "span_label",
+    "'5 YEARS EARLY'"
+   ],
+   [
+    "span_role",
+    "'g'"
+   ],
+   [
+    "span_note",
+    "'done here, not at the end'"
+   ],
+   [
+    "ruler_fill",
+    "(238, 208, 128)"
+   ],
+   [
+    "side_pic",
+    "'calendar'"
+   ],
+   [
+    "t_head",
+    "0.15"
+   ],
+   [
+    "t_ruler",
+    "0.7"
+   ],
+   [
+    "roll_dur",
+    "1.3"
+   ],
+   [
+    "t_span",
+    "2.6"
+   ],
+   [
+    "t_label",
+    "3.2"
+   ],
+   [
+    "t_note",
+    "4.0"
+   ]
+  ],
+  "preview": "previews/evidence__ruler_span.mp4",
+  "still": "stills/evidence__ruler_span.jpg",
+  "fit": "PASS",
+  "samples": 61
+ },
+ {
+  "key": "reveals/stamp",
+  "family": "reveals",
+  "name": "stamp",
+  "kind": "component",
+  "module": "reveals",
+  "func": "stamp",
+  "use": "Land a verdict on one figure: the number sits on a card and a rubber stamp (SAVED, PAID, EXTRA...) thumps down beside it.",
+  "notes": "Stamp colour follows role: green = positive, orange = cost or overpay, blue = invest.",
+  "dur": 4.5,
+  "params": [
+   [
+    "title",
+    "('THE', 'RESULT')"
+   ],
+   [
+    "label",
+    "'OVER 20 YEARS'"
+   ],
+   [
+    "figure",
+    "'\u00a324,000'"
+   ],
+   [
+    "word",
+    "'SAVED'"
+   ],
+   [
+    "role",
+    "'g'"
+   ],
+   [
+    "aside",
+    "'example figure'"
+   ],
+   [
+    "stamp_rot",
+    "-8.0"
+   ],
+   [
+    "t_title",
+    "0.15"
+   ],
+   [
+    "t_card",
+    "0.5"
+   ],
+   [
+    "t_figure",
+    "1.0"
+   ],
+   [
+    "t_stamp",
+    "2.0"
+   ],
+   [
+    "t_aside",
+    "2.9"
+   ]
+  ],
+  "preview": "previews/reveals__stamp.mp4",
+  "still": "stills/reveals__stamp.jpg",
+  "fit": "PASS",
+  "samples": 45
+ },
+ {
+  "key": "reveals/rolling_counter",
+  "family": "reveals",
+  "name": "rolling_counter",
+  "kind": "component",
+  "module": "reveals",
+  "func": "rolling_counter",
+  "use": "Build up to a total: the digits roll like an odometer and settle left to right, so the size of the number sinks in.",
+  "notes": "panel_role 'ink' (dark counter) or 'card'. The ticks sound is trimmed to the roll: t_roll to t_roll + roll + stagger x (digits - 1).",
+  "dur": 5.0,
+  "params": [
+   [
+    "title",
+    "('ADD IT', 'ALL UP')"
+   ],
+   [
+    "label",
+    "'TOTAL PAID IN'"
+   ],
+   [
+    "figure",
+    "'\u00a324,000'"
+   ],
+   [
+    "sub",
+    "'OVER 20 YEARS'"
+   ],
+   [
+    "aside",
+    "'example figures'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "panel_role",
+    "'ink'"
+   ],
+   [
+    "size",
+    "190"
+   ],
+   [
+    "t_title",
+    "0.15"
+   ],
+   [
+    "t_panel",
+    "0.5"
+   ],
+   [
+    "t_label",
+    "0.85"
+   ],
+   [
+    "t_roll",
+    "1.1"
+   ],
+   [
+    "roll",
+    "1.0"
+   ],
+   [
+    "stagger",
+    "0.3"
+   ],
+   [
+    "t_sub",
+    "None"
+   ],
+   [
+    "t_aside",
+    "None"
+   ]
+  ],
+  "preview": "previews/reveals__rolling_counter.mp4",
+  "still": "stills/reveals__rolling_counter.jpg",
+  "fit": "PASS",
+  "samples": 51
+ },
+ {
+  "key": "reveals/circled_figure",
+  "family": "reveals",
+  "name": "circled_figure",
+  "kind": "component",
+  "module": "reveals",
+  "func": "circled_figure",
+  "use": "Single out the one figure the viewer must remember: it lands on paper, gets a marker ring, an arrow and a handwritten note.",
+  "notes": "",
+  "dur": 4.5,
+  "params": [
+   [
+    "title",
+    "('THE NUMBER', 'TO WATCH')"
+   ],
+   [
+    "label",
+    "'OVER 20 YEARS'"
+   ],
+   [
+    "figure",
+    "'\u00a324,000'"
+   ],
+   [
+    "note_text",
+    "'this is the one that matters'"
+   ],
+   [
+    "footer",
+    "'Example figure, for illustration'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "t_title",
+    "0.15"
+   ],
+   [
+    "t_card",
+    "0.5"
+   ],
+   [
+    "t_figure",
+    "1.0"
+   ],
+   [
+    "t_ring",
+    "1.7"
+   ],
+   [
+    "t_note",
+    "2.4"
+   ]
+  ],
+  "preview": "previews/reveals__circled_figure.mp4",
+  "still": "stills/reveals__circled_figure.jpg",
+  "fit": "PASS",
+  "samples": 45
+ },
+ {
   "key": "endcards/recap_checklist",
   "family": "endcards",
   "name": "recap_checklist",
@@ -50,7 +1530,7 @@
   "preview": "previews/endcards__recap_checklist.mp4",
   "still": "stills/endcards__recap_checklist.jpg",
   "fit": "PASS",
-  "samples": 28
+  "samples": 56
  },
  {
   "key": "endcards/recap_cards",
@@ -99,7 +1579,7 @@
   "preview": "previews/endcards__recap_cards.mp4",
   "still": "stills/endcards__recap_cards.jpg",
   "fit": "PASS",
-  "samples": 30
+  "samples": 61
  },
  {
   "key": "endcards/end_card",
@@ -152,6 +1632,6 @@
   "preview": "previews/endcards__end_card.mp4",
   "still": "stills/endcards__end_card.jpg",
   "fit": "PASS",
-  "samples": 30
+  "samples": 61
  }
 ]
