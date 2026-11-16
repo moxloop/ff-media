@@ -1,138 +1,154 @@
 [
  {
-  "key": "reveals/stamp",
-  "family": "reveals",
-  "name": "stamp",
+  "key": "charts/line_race",
+  "family": "charts",
+  "name": "line_race",
   "kind": "component",
-  "module": "reveals",
-  "func": "stamp",
-  "use": "Land a verdict on one figure: the number sits on a card and a rubber stamp (SAVED, PAID, EXTRA...) thumps down beside it.",
-  "notes": "Stamp colour follows role: green = positive, orange = cost or overpay, blue = invest.",
-  "dur": 4.5,
+  "module": "charts",
+  "func": "line_race",
+  "use": "Two (or three) options compared over time: the lines race left to right together, each with its label riding the tip, and the one that ends ahead gets the big end value and a handwritten callout.",
+  "notes": "",
+  "dur": 6.0,
   "params": [
    [
     "title",
-    "('THE', 'RESULT')"
+    "'WHICH ONE'"
+   ],
+   [
+    "title_key",
+    "'ENDS AHEAD?'"
+   ],
+   [
+    "key_role",
+    "'b'"
+   ],
+   [
+    "series",
+    "(('PLAN A', 'b', (0, 12, 8, 30, 24, 52, 46, 76, 90, 80, 58, 64, 50, 60, 88, 80, 118, 110, 150, 142, 200)), ('PLAN B', 'o', (0, 8, 15, 22, 30, 38, 45, 52, 60, 68, 75, 82, 90, 98, 105, 112, 120, 128, 135, 142, 150)))"
+   ],
+   [
+    "fmt",
+    "None"
+   ],
+   [
+    "winner",
+    "None"
+   ],
+   [
+    "callout",
+    "'ends ahead'"
+   ],
+   [
+    "x_label",
+    "'TIME'"
    ],
    [
     "label",
-    "'OVER 20 YEARS'"
-   ],
-   [
-    "figure",
-    "'\u00a324,000'"
-   ],
-   [
-    "word",
-    "'SAVED'"
-   ],
-   [
-    "role",
-    "'g'"
-   ],
-   [
-    "aside",
-    "'example figure'"
-   ],
-   [
-    "stamp_rot",
-    "-8.0"
+    "'Illustration, not real returns'"
    ],
    [
     "t_title",
-    "0.15"
-   ],
-   [
-    "t_card",
-    "0.5"
-   ],
-   [
-    "t_figure",
-    "1.0"
-   ],
-   [
-    "t_stamp",
-    "2.0"
-   ],
-   [
-    "t_aside",
-    "2.9"
-   ]
-  ],
-  "preview": "previews/reveals__stamp.mp4",
-  "still": "stills/reveals__stamp.jpg",
-  "fit": "PASS",
-  "samples": 23
- },
- {
-  "key": "reveals/rolling_counter",
-  "family": "reveals",
-  "name": "rolling_counter",
-  "kind": "component",
-  "module": "reveals",
-  "func": "rolling_counter",
-  "use": "Build up to a total: the digits roll like an odometer and settle left to right, so the size of the number sinks in.",
-  "notes": "panel_role 'ink' (dark counter) or 'card'. The ticks sound is trimmed to the roll: t_roll to t_roll + roll + stagger x (digits - 1).",
-  "dur": 5.0,
-  "params": [
-   [
-    "title",
-    "('ADD IT', 'ALL UP')"
-   ],
-   [
-    "label",
-    "'TOTAL PAID IN'"
-   ],
-   [
-    "figure",
-    "'\u00a324,000'"
-   ],
-   [
-    "sub",
-    "'OVER 20 YEARS'"
-   ],
-   [
-    "aside",
-    "'example figures'"
-   ],
-   [
-    "role",
-    "'o'"
-   ],
-   [
-    "panel_role",
-    "'ink'"
-   ],
-   [
-    "size",
-    "190"
-   ],
-   [
-    "t_title",
-    "0.15"
+    "0.2"
    ],
    [
     "t_panel",
     "0.5"
    ],
    [
-    "t_label",
-    "0.85"
+    "t_race",
+    "1.2"
    ],
    [
-    "t_roll",
+    "race_dur",
+    "2.6"
+   ],
+   [
+    "t_end",
+    "None"
+   ],
+   [
+    "t_callout",
+    "None"
+   ]
+  ],
+  "preview": "previews/charts__line_race.mp4",
+  "still": "stills/charts__line_race.jpg",
+  "fit": "PASS",
+  "samples": 30
+ },
+ {
+  "key": "charts/waterfall",
+  "family": "charts",
+  "name": "waterfall",
+  "kind": "component",
+  "module": "charts",
+  "func": "waterfall",
+  "use": "Fees, charges or deductions eating into a figure: a whole starting bar, each deduction as an orange block stepping down on its cue, ending on the green 'what you keep' bar with the one big number.",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "title",
+    "'WHERE THE'"
+   ],
+   [
+    "title_key",
+    "'MONEY GOES'"
+   ],
+   [
+    "key_role",
+    "'o'"
+   ],
+   [
+    "start",
+    "('BEFORE FEES', 1000)"
+   ],
+   [
+    "steps",
+    "(('FUND FEE', 150), ('PLATFORM FEE', 100), ('ADVICE FEE', 250))"
+   ],
+   [
+    "end_label",
+    "'WHAT YOU KEEP'"
+   ],
+   [
+    "end_role",
+    "'g'"
+   ],
+   [
+    "start_role",
+    "'k'"
+   ],
+   [
+    "fmt",
+    "None"
+   ],
+   [
+    "aside",
+    "'half of it gone'"
+   ],
+   [
+    "label",
+    "'Illustration, not real returns'"
+   ],
+   [
+    "t_title",
+    "0.2"
+   ],
+   [
+    "t_panel",
+    "0.5"
+   ],
+   [
+    "t_start",
     "1.1"
    ],
    [
-    "roll",
-    "1.0"
+    "t_steps",
+    "None"
    ],
    [
-    "stagger",
-    "0.3"
-   ],
-   [
-    "t_sub",
+    "t_end",
     "None"
    ],
    [
@@ -140,70 +156,82 @@
     "None"
    ]
   ],
-  "preview": "previews/reveals__rolling_counter.mp4",
-  "still": "stills/reveals__rolling_counter.jpg",
+  "preview": "previews/charts__waterfall.mp4",
+  "still": "stills/charts__waterfall.jpg",
   "fit": "PASS",
-  "samples": 25
+  "samples": 30
  },
  {
-  "key": "reveals/circled_figure",
-  "family": "reveals",
-  "name": "circled_figure",
+  "key": "charts/timeline_markers",
+  "family": "charts",
+  "name": "timeline_markers",
   "kind": "component",
-  "module": "reveals",
-  "func": "circled_figure",
-  "use": "Single out the one figure the viewer must remember: it lands on paper, gets a marker ring, an arrow and a handwritten note.",
+  "module": "charts",
+  "func": "timeline_markers",
+  "use": "A repayment or balance timeline: the year track unrolls, two to four markers pop on their cues with handwritten notes, and the gap between two of them (e.g. years saved) is highlighted as the one big figure.",
   "notes": "",
-  "dur": 4.5,
+  "dur": 6.0,
   "params": [
    [
     "title",
-    "('THE NUMBER', 'TO WATCH')"
+    "'THE FINISH LINE'"
    ],
    [
-    "label",
-    "'OVER 20 YEARS'"
+    "title_key",
+    "'MOVES'"
    ],
    [
-    "figure",
-    "'\u00a324,000'"
-   ],
-   [
-    "note_text",
-    "'this is the one that matters'"
-   ],
-   [
-    "footer",
-    "'Example figure, for illustration'"
-   ],
-   [
-    "role",
+    "key_role",
     "'o'"
    ],
    [
-    "t_title",
-    "0.15"
+    "ticks",
+    "('0', '5', '10', '15', '20', '25')"
    ],
    [
-    "t_card",
+    "unit",
+    "'YEARS'"
+   ],
+   [
+    "markers",
+    "((0.0, 'TODAY', 'n', 'start here'), (0.86, 'PAID OFF', 'o', 'with overpayments'), (1.0, 'ORIGINAL END', 'm', 'the plan'))"
+   ],
+   [
+    "span",
+    "(1, 2, '3\u00bd YEARS EARLY', 'g')"
+   ],
+   [
+    "label",
+    "'Illustration, not real figures'"
+   ],
+   [
+    "t_title",
+    "0.2"
+   ],
+   [
+    "t_panel",
     "0.5"
    ],
    [
-    "t_figure",
+    "t_track",
+    "0.9"
+   ],
+   [
+    "track_dur",
     "1.0"
    ],
    [
-    "t_ring",
-    "1.7"
+    "t_markers",
+    "(1.1, 2.3, 2.9)"
    ],
    [
-    "t_note",
-    "2.4"
+    "t_span",
+    "3.7"
    ]
   ],
-  "preview": "previews/reveals__circled_figure.mp4",
-  "still": "stills/reveals__circled_figure.jpg",
+  "preview": "previews/charts__timeline_markers.mp4",
+  "still": "stills/charts__timeline_markers.jpg",
   "fit": "PASS",
-  "samples": 23
+  "samples": 30
  }
 ]
