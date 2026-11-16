@@ -1,261 +1,209 @@
 [
  {
-  "key": "evidence/calc_sheet",
-  "family": "evidence",
-  "name": "calc_sheet",
+  "key": "reveals/stamp",
+  "family": "reveals",
+  "name": "stamp",
   "kind": "component",
-  "module": "evidence",
-  "func": "calc_sheet",
-  "use": "The signature 'Figures Forward calculation' sheet in body gear: show the working row by row at the episode's key figure, with one highlighter swipe.",
-  "notes": "Use once at the episode's key figure (and once in the hook). The camera is a calm push to about 1.12, not a pull-out.",
-  "dur": 6.0,
+  "module": "reveals",
+  "func": "stamp",
+  "use": "Land a verdict on one figure: the number sits on a card and a rubber stamp (SAVED, PAID, EXTRA...) thumps down beside it.",
+  "notes": "Stamp colour follows role: green = positive, orange = cost or overpay, blue = invest.",
+  "dur": 4.5,
   "params": [
    [
     "title",
-    "'FIGURES FORWARD CALCULATION'"
+    "('THE', 'RESULT')"
    ],
    [
-    "tagline",
-    "'worked example'"
+    "label",
+    "'OVER 20 YEARS'"
    ],
    [
-    "subtitle",
-    "'\u00a3100 a month for 10 years (120 months)'"
+    "figure",
+    "'\u00a324,000'"
    ],
    [
-    "rows",
-    "(('Paid in', '\u00a312,000'), ('Growth at an example 5% a year', '\u00a33,500'), ('Fees taken out', '\u2212\u00a3500'))"
+    "word",
+    "'SAVED'"
    ],
    [
-    "total",
-    "('Ends at', '\u00a315,000')"
+    "role",
+    "'g'"
    ],
    [
-    "key_row",
-    "'total'"
+    "aside",
+    "'example figure'"
    ],
    [
-    "hk",
-    "'o'"
+    "stamp_rot",
+    "-8.0"
    ],
    [
-    "footnote",
-    "'Illustrative figures, rounded'"
-   ],
-   [
-    "side_pic",
-    "'calculator'"
-   ],
-   [
-    "side_note",
-    "'the working, shown'"
-   ],
-   [
-    "t_sheet",
+    "t_title",
     "0.15"
    ],
    [
-    "t_rows",
-    "None"
+    "t_card",
+    "0.5"
    ],
    [
-    "t_total",
-    "None"
+    "t_figure",
+    "1.0"
    ],
    [
-    "t_hl",
-    "None"
+    "t_stamp",
+    "2.0"
    ],
    [
-    "t_side",
-    "None"
+    "t_aside",
+    "2.9"
    ]
   ],
-  "preview": "previews/evidence__calc_sheet.mp4",
-  "still": "stills/evidence__calc_sheet.jpg",
+  "preview": "previews/reveals__stamp.mp4",
+  "still": "stills/reveals__stamp.jpg",
   "fit": "PASS",
-  "samples": 30
+  "samples": 23
  },
  {
-  "key": "evidence/payslip",
-  "family": "evidence",
-  "name": "payslip",
+  "key": "reveals/rolling_counter",
+  "family": "reveals",
+  "name": "rolling_counter",
   "kind": "component",
-  "module": "evidence",
-  "func": "payslip",
-  "use": "A generic example payslip or receipt when the script walks through pay, deductions or a bill line by line and singles one line out.",
-  "notes": "Always an obviously made-up document: keep the 'EXAMPLE' tag and never pass a real employer, bank or account number.",
-  "dur": 6.0,
+  "module": "reveals",
+  "func": "rolling_counter",
+  "use": "Build up to a total: the digits roll like an odometer and settle left to right, so the size of the number sinks in.",
+  "notes": "panel_role 'ink' (dark counter) or 'card'. The ticks sound is trimmed to the roll: t_roll to t_roll + roll + stagger x (digits - 1).",
+  "dur": 5.0,
   "params": [
    [
-    "headline",
-    "'WHERE DOES'"
-   ],
-   [
-    "key_word",
-    "'IT GO?'"
-   ],
-   [
-    "hk",
-    "'o'"
-   ],
-   [
     "title",
-    "'EXAMPLE PAYSLIP'"
+    "('ADD IT', 'ALL UP')"
+   ],
+   [
+    "label",
+    "'TOTAL PAID IN'"
+   ],
+   [
+    "figure",
+    "'\u00a324,000'"
    ],
    [
     "sub",
-    "'Example employer \u00b7 example month'"
+    "'OVER 20 YEARS'"
    ],
    [
-    "lines",
-    "(('Gross pay', '\u00a33,000.00', 'pay'), ('Tax', '\u2212\u00a3400.00', 'ded'), ('Pension', '\u2212\u00a3150.00', 'ded'), ('Other deduction', '\u2212\u00a350.00', 'ded'))"
+    "aside",
+    "'example figures'"
    ],
    [
-    "net",
-    "('NET PAY', '\u00a32,400.00')"
-   ],
-   [
-    "stamp",
-    "'EXAMPLE'"
-   ],
-   [
-    "footer",
-    "'Illustration only \u00b7 not a real document'"
-   ],
-   [
-    "ring_line",
-    "2"
-   ],
-   [
-    "ring_role",
+    "role",
     "'o'"
    ],
    [
-    "ring_note",
-    "'this line is the one to check'"
+    "panel_role",
+    "'ink'"
    ],
    [
-    "side_pic",
-    "'coins'"
+    "size",
+    "190"
    ],
    [
-    "t_head",
+    "t_title",
     "0.15"
    ],
    [
-    "t_slip",
-    "0.6"
-   ],
-   [
-    "t_lines",
-    "None"
-   ],
-   [
-    "t_net",
-    "None"
-   ],
-   [
-    "t_ring",
-    "None"
-   ]
-  ],
-  "preview": "previews/evidence__payslip.mp4",
-  "still": "stills/evidence__payslip.jpg",
-  "fit": "PASS",
-  "samples": 30
- },
- {
-  "key": "evidence/ruler_span",
-  "family": "evidence",
-  "name": "ruler_span",
-  "kind": "component",
-  "module": "evidence",
-  "func": "ruler_span",
-  "use": "A length of time measured out on a paper ruler: mark the span between two points (years saved, months left, time in the market).",
-  "notes": "",
-  "dur": 6.0,
-  "params": [
-   [
-    "headline",
-    "'HOW MUCH'"
-   ],
-   [
-    "key_word",
-    "'SOONER?'"
-   ],
-   [
-    "hk",
-    "'g'"
-   ],
-   [
-    "units",
-    "25"
-   ],
-   [
-    "unit_label",
-    "'YEARS'"
-   ],
-   [
-    "major",
-    "5"
-   ],
-   [
-    "a",
-    "20"
-   ],
-   [
-    "b",
-    "25"
-   ],
-   [
-    "span_label",
-    "'5 YEARS EARLY'"
-   ],
-   [
-    "span_role",
-    "'g'"
-   ],
-   [
-    "span_note",
-    "'done here, not at the end'"
-   ],
-   [
-    "ruler_fill",
-    "(238, 208, 128)"
-   ],
-   [
-    "side_pic",
-    "'calendar'"
-   ],
-   [
-    "t_head",
-    "0.15"
-   ],
-   [
-    "t_ruler",
-    "0.7"
-   ],
-   [
-    "roll_dur",
-    "1.3"
-   ],
-   [
-    "t_span",
-    "2.6"
+    "t_panel",
+    "0.5"
    ],
    [
     "t_label",
-    "3.2"
+    "0.85"
+   ],
+   [
+    "t_roll",
+    "1.1"
+   ],
+   [
+    "roll",
+    "1.0"
+   ],
+   [
+    "stagger",
+    "0.3"
+   ],
+   [
+    "t_sub",
+    "None"
+   ],
+   [
+    "t_aside",
+    "None"
+   ]
+  ],
+  "preview": "previews/reveals__rolling_counter.mp4",
+  "still": "stills/reveals__rolling_counter.jpg",
+  "fit": "PASS",
+  "samples": 25
+ },
+ {
+  "key": "reveals/circled_figure",
+  "family": "reveals",
+  "name": "circled_figure",
+  "kind": "component",
+  "module": "reveals",
+  "func": "circled_figure",
+  "use": "Single out the one figure the viewer must remember: it lands on paper, gets a marker ring, an arrow and a handwritten note.",
+  "notes": "",
+  "dur": 4.5,
+  "params": [
+   [
+    "title",
+    "('THE NUMBER', 'TO WATCH')"
+   ],
+   [
+    "label",
+    "'OVER 20 YEARS'"
+   ],
+   [
+    "figure",
+    "'\u00a324,000'"
+   ],
+   [
+    "note_text",
+    "'this is the one that matters'"
+   ],
+   [
+    "footer",
+    "'Example figure, for illustration'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "t_title",
+    "0.15"
+   ],
+   [
+    "t_card",
+    "0.5"
+   ],
+   [
+    "t_figure",
+    "1.0"
+   ],
+   [
+    "t_ring",
+    "1.7"
    ],
    [
     "t_note",
-    "4.0"
+    "2.4"
    ]
   ],
-  "preview": "previews/evidence__ruler_span.mp4",
-  "still": "stills/evidence__ruler_span.jpg",
+  "preview": "previews/reveals__circled_figure.mp4",
+  "still": "stills/reveals__circled_figure.jpg",
   "fit": "PASS",
-  "samples": 30
+  "samples": 23
  }
 ]

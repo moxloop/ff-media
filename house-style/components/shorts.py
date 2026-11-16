@@ -77,17 +77,17 @@ def number_transform(base, d, lt, cam, headline=(("A SMALL SUM", None), ("ADDS U
     box = (L_, 610, R_, 1110); a = panel(base, lt, box, t_card, CARD, seed=21)
     if a > .5:
         ruled(d, box, fa(lt, t_card + .2))
-        morph(d, lt, CXS, 678, [(t_start, start_top, MUTED), (t_turn, end_top, MUTED)], 46, "o", "mm", CARD, snd=None)
+        morph(d, lt, CXS, 678, [(t_start, start_top, MUTED), (t_turn, end_top, MUTED)], 46, "o", "mm", CARD, dur=.2, snd=None, grow=.04)
         s0, s1 = (gbp(start) if not isinstance(start, str) else start), (gbp(end) if not isinstance(end, str) else end)
         size = fz(s1, 200, "a", 600); ct, ch = cap("a", size); ymid = 850; w1 = tw(s1, size, "a")
         ph = appear(lt, t_hl, .45, "marker")
         if ph > .01: hl(d, CXS - w1 / 2, ymid - ch * .46, CXS + w1 / 2, ymid + ch * .58, mix(CARD, HLC[role], .95), ph)
-        if isinstance(start, str) or isinstance(end, str): morph(d, lt, CXS, ymid, [(t_start, s0, INK), (t_turn, s1, col)], size, "a", "mm", CARD)
+        if isinstance(start, str) or isinstance(end, str): morph(d, lt, CXS, ymid, [(t_start, s0, INK), (t_turn, s1, INK)], size, "a", "mm", CARD)
         elif lt >= t_start:
             appear(lt, t_turn, count_dur, "ticks"); u = clamp((lt - t_turn) / count_dur); v = start + (end - start) * ease(u)
             sc = (.6 + .4 * back((lt - t_start) / .35)) * (1 + .07 * math.sin(math.pi * u))
-            T(d, CXS, ymid + ch * sc / 2, gbp(round(v)), size * sc, "a", mix(INK, col, ease(u * 2)), "ms", min(1, (lt - t_start) / .2), CARD)
-        morph(d, lt, CXS, 1022, [(t_start + .15, start_sub, INK), (t_turn + .1, end_sub, INK)], 60, "o", "mm", CARD, snd=None)
+            T(d, CXS, ymid + ch * sc / 2, gbp(round(v)), size * sc, "a", INK, "ms", min(1, (lt - t_start) / .2), CARD)
+        morph(d, lt, CXS, 1022, [(t_start + .15, start_sub, INK), (t_turn + .1, end_sub, INK)], 60, "o", "mm", CARD, dur=.2, snd=None, grow=.04)
         chime(lt, t_hl + .1)
     cut(base, lt, picture, 250, 1270, 150, t_pic, rot=-5, disc=(role if role in DISC else "k", 96))
     notes(d, lt, 400, 1218, note_lines, 60, t_note, MUTED, maxw=440)
@@ -102,13 +102,13 @@ def two_paths(base, d, lt, cam, headline=(("SAME MONEY,", None), ("TWO PATHS", "
     tag(base, lt, CXS, 596, token_text, 100, t_token, INK, CREAM, -2, "a", "pop", (30, 16))
     for (role, t0, tt, x1, lab, val, pic, rot, sd) in ((a_role, t_a, t_a_tag, 300, a_label, a_value, a_pic, -3, 5), (b_role, t_b, t_b_tag, 680, b_label, b_value, b_pic, 3, 9)):
         sgn = -1 if x1 < CXS else 1
-        arrow(d, (CXS + sgn * 46, 676), (x1 + sgn * 6, 798), appear(lt, t0, .55, "marker"), INKC[role], 10, bend=-.22 * sgn, seed=sd)
-        cut(base, lt, pic, x1, 912, 128, t0 + .45, rot=rot * 1.5, disc=(role, 86), sfx=None)
+        arrow(d, (CXS + sgn * 46, 676), (x1 + sgn * 6, 778), appear(lt, t0, .55, "marker"), INKC[role], 10, bend=-.22 * sgn, seed=sd)
+        cut(base, lt, pic, x1, 890, 118, t0 + .45, rot=rot * 1.5, disc=(role, 80), sfx=None)
         vs = fz(val, 84, "a", 286)
-        tag(base, lt, x1, 1122, ((lab, 40, "o"), (val, vs, "a")), 0, tt, FILL[role], FG[role], rot, "o", "pop", (22, 16))
+        tag(base, lt, x1, 1140, ((lab, 40, "o"), (val, vs, "a")), 0, tt, FILL[role], FG[role], rot, "o", "pop", (22, 16))
     s = fz(question, 88, "c", 640); ct, ch = cap("c", s)
-    TB(d, CXS, 1262, question, s, "c", INK, "m", fa(lt, t_q), dy=12 * (1 - eout((lt - t_q) / .3)))
-    w = tw(question, s, "c"); underline(d, CXS - w / 2, CXS + w / 2, 1262 + ch + 26, appear(lt, t_q + .45, .4, "marker"), ORANGE, 7)
+    TB(d, CXS, 1284, question, s, "c", INK, "m", fa(lt, t_q), dy=12 * (1 - eout((lt - t_q) / .3)))
+    w = tw(question, s, "c"); underline(d, CXS - w / 2, CXS + w / 2, 1284 + ch + 24, appear(lt, t_q + .45, .4, "marker"), ORANGE, 7)
 
 @component("shorts_hooks", "myth_vs_reality", dur=6.0, cam=camv(6.0), still=5.0,
            use="Open a Short by striking out a common belief, then drop in the real figure highlighted underneath.")
@@ -116,18 +116,19 @@ def myth_vs_reality(base, d, lt, cam, myth_kicker="PEOPLE SAY", myth="YOU NEED A
                     reality_lead="YOU CAN START WITH", figure="£25", figure_sub="A MONTH", note_text="example figure", picture="piggybank", role="g",
                     t_card=.15, t_myth=.35, t_cross=1.2, t_tag=1.6, t_reality=2.1, t_lead=2.3, t_fig=2.6, t_pic=3.1, t_note=3.8):
     blob(base, cam, "blobG" if role == "g" else "blobB" if role == "b" else "blobO", 760, 1150)
-    box = (L_, 332, R_, 752); a = panel(base, lt, box, t_card, CARD, seed=14)
+    size = 84; lines = wrap(myth, size, "a", 640)
+    while len(lines) > 3: size -= 4; lines = wrap(myth, size, "a", 640)
+    ct, ch = cap("a", size); oy = (3 - len(lines)) * ch * 1.34                 # a shorter myth makes a shorter card (bottom edge fixed)
+    box = (L_, 332 + oy, R_, 752); a = panel(base, lt, box, t_card, CARD, seed=14)
     if a > .5:
-        TB(d, 170, 368, myth_kicker, 42, "o", MUTED, "l", fa(lt, t_card + .2), CARD)
-        size = 84; lines = wrap(myth, size, "a", 640)
-        while len(lines) > 3: size -= 4; lines = wrap(myth, size, "a", 640)
-        ct, ch = cap("a", size); dim = ease((lt - t_cross - .3) / .5); y = 446
+        TB(d, 170, 368 + oy, myth_kicker, 42, "o", MUTED, "l", fa(lt, t_card + .2), CARD)
+        dim = ease((lt - t_cross - .3) / .5); y = 446 + oy
         for i, s in enumerate(lines):
             t0 = t_myth + i * .22; TB(d, 170, y, s, size, "a", mix(INK, LIGHT, dim * .8), "l", fa(lt, t0, .22), CARD, dy=-20 * (1 - back((lt - t0) / .26)))
             stroke(d, [(160, y + ch * .56), (170 + tw(s, size, "a") / 2, y + ch * .44), (182 + tw(s, size, "a"), y + ch * .52)],
                    appear(lt, t_cross + i * .16, .3, "marker" if i == 0 else None), RED, 10, 30 + i, 1.6)
             y += ch * 1.34
-        tag(base, lt, 716, 398, myth_tag, 60, t_tag, RED, CARD, -7, "a", "pop", (20, 12))
+        tag(base, lt, 716, 398 + oy, myth_tag, 60, t_tag, RED, CARD, -7, "a", "pop", (20, 12))
     tag(base, lt, L_ + tw(reality_tag, 56, "a") / 2 + 34, 846, reality_tag, 56, t_reality, FILL[role], FG[role], 3, "a", "pop", (24, 14))
     ls = fz(reality_lead, 76, "a", 700); kline(d, lt, L_, 914 - cap("a", ls)[0], [(reality_lead, t_lead, INK, None)], ls, "a")
     fig(d, lt, L_ + 8, 1010, figure, 220, t_fig, INK, "l", maxw=410, hk=role if role in HLC else "o")
@@ -167,16 +168,16 @@ def two_jars(base, d, lt, cam, headline=(("SAME MONEY IN,", None), ("TWO JARS", 
              b_label="INVEST", b_value=31000, b_role="b", note_text="£7,000 more in this jar", note_side="b",
              t_head=.15, t_jars=.9, t_fill=1.5, t_note=3.6, fill_dur=1.3):
     blob(base, cam, "blobK", 490, 900, .12)
-    head(d, lt, 332, headline, 90, t_head)
+    head(d, lt, 332, headline, 80, t_head)
     top = max(a_value, b_value, 1); bxs = {}
-    stroke(d, [(150, 1062), (490, 1058), (830, 1063)], appear(lt, t_jars - .1, .5, "marker"), INK, 6, 12, 1.0)          # the shelf
+    stroke(d, [(150, 1086), (490, 1082), (830, 1087)], appear(lt, t_jars - .1, .5, "marker"), INK, 6, 12, 1.0)          # the shelf
     for k, (cx, lab, val, role) in enumerate(((300, a_label, a_value, a_role), (680, b_label, b_value, b_role))):
         t0 = t_jars + k * .2; filling = t_fill <= lt < t_fill + fill_dur
-        jar(base, d, lt, cx, 848, t0, .94 * val / top * ease((lt - t_fill) / fill_dur), DISC[role], (2.4, t_fill) if filling else None, w=112, h=198)
-        tag(base, lt, cx, 548, lab, 46, t0 + .25, FILL[role], FG[role], -2 if k == 0 else 2, "o", None, (22, 13))
-        bxs["ab"[k]] = fig(d, lt, cx, 1104, val, 100, t_fill, INKC[role], "m", maxw=330, dur=fill_dur, snd=k == 0)
+        jar(base, d, lt, cx, 880, t0, .94 * val / top * ease((lt - t_fill) / fill_dur), DISC[role], (2.4, t_fill) if filling else None, w=112, h=190)
+        tag(base, lt, cx, 560, lab, 46, t0 + .25, FILL[role], FG[role], -2 if k == 0 else 2, "o", None, (22, 13))
+        bxs["ab"[k]] = fig(d, lt, cx, 1124, val, 100, t_fill, INKC[role], "m", maxw=330, dur=fill_dur, snd=k == 0)
     chime(lt, t_fill + fill_dur)
-    s = fz(note_text, 62, "c", 660); TB(d, CXS, 1262, note_text, s, "c", INK, "m", fa(lt, t_note), dy=10 * (1 - eout((lt - t_note) / .3)))
+    s = fz(note_text, 62, "c", 660); TB(d, CXS, 1286, note_text, s, "c", INK, "m", fa(lt, t_note), dy=10 * (1 - eout((lt - t_note) / .3)))
     if note_side in bxs:
         bx = bxs[note_side]; underline(d, bx[0], bx[2], bx[3] + 20, appear(lt, t_note + .3, .4, "marker"), INKC[b_role if note_side == "b" else a_role], 7)
 
@@ -189,9 +190,9 @@ def _split_sprites(top_fill, bot_fill):
         r = random.Random(seed); pts = [(0, 0), (CW, 0)]; x = float(CW)
         while x > 0: pts.append((x, hpx + extra + r.uniform(-jit, jit) + 9 * math.sin(x / 113 + seed))); x -= r.uniform(12, 30)
         pts.append((0, hpx + extra)); m = Image.new("L", (CW, hpx + 90), 0); ImageDraw.Draw(m).polygon(pts, fill=255); return m
-    white = _paper_from_mask(torn(3, 15, 7), CARD, 7, .4, (0, 9), 9); tint = _paper_from_mask(torn(8, -6, 6), top_fill, 9, 0)
+    white = V._paper_from_mask(torn(3, 15, 7), CARD, 7, .4, (0, 9), 9); tint = V._paper_from_mask(torn(8, -6, 6), top_fill, 9, 0)
     white.alpha_composite(tint); hb = CH - hpx + int(60 * S)
-    return white, _paper_from_mask(Image.new("L", (CW, hb), 255), bot_fill, 5, 0), hpx
+    return white, V._paper_from_mask(Image.new("L", (CW, hb), 255), bot_fill, 5, 0), hpx
 @component("shorts_comparisons", "split_screen", dur=5.5, cam=camv(5.5), still=4.6,
            use="Set two options against each other in a Short as two torn paper halves, orange above and blue below, one figure each.")
 def split_screen(base, d, lt, cam, a_label="OVERPAY", a_value="£24,000", a_sub="INTEREST SAVED", a_pic="house", a_role="o",

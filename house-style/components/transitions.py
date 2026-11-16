@@ -18,7 +18,7 @@ def _under(h, w):
     """Cached underside of a sheet: plain grained paper, a little darker than the front."""
     if ("u", h, w) not in _TC:
         n = cv2.GaussianBlur(np.random.default_rng(11).standard_normal((h, w)).astype(np.float32), (0, 0), 1.2) * 9
-        _TC[("u", h, w)] = np.clip(np.array((226, 217, 198), np.float32)[None, None, :] + n[:, :, None], 0, 255)
+        _TC[("u", h, w)] = np.clip(np.array((214, 204, 184), np.float32)[None, None, :] + n[:, :, None], 0, 255)
     return _TC[("u", h, w)]
 def _soft(mask, k=8, sig=3.0):
     """Cheap soft shadow from a float mask: blur at 1/k size and scale back up."""
@@ -35,20 +35,18 @@ def page_turn(a, b, p, flip=False, tilt=.16):
     dist = xx - (f + slant * (yy - h / 2))                                        # signed distance from the slanted fold line (+ = already turned)
     # the turned part lies mirrored across the fold line: its underside, with a little show-through of the old sheet
     M = np.float32([[-1, 2 * slant, 2 * f - slant * h], [0, 1, 0]])
-    ghost = cv2.warpAffine(a, M, (w, h), flags=cv2.INTER_LINEAR | cv2.WARP_INVERSE_MAP, borderMode=cv2.BORDER_REPLICATE).astype(np.float32)
-    curl = np.clip(-dist / (w * .11), 0, 1)                                       # 0 on the fold, 1 well onto the flap
-    shade = (.60 + .40 * curl ** .7) * (1 - .10 * np.exp(-((curl - .22) / .09) ** 2))     # dark in the curl, a soft crease band, lighter on the flat
-    flap = (_under(h, w) * .86 + ghost * .14) * shade[:, :, None]
+    ghost = cv2.warpAffine(a, M, (w, h), flags=cv2.INTER_LINEAR | cv2.WARP_INVERSE_MAP, borderMode=cv2.BORDER_REPLICATE)
+    if ("u8", h, w) not in _TC: _TC[("u8", h, w)] = _under(h, w).astype(np.uint8)
+    curl = np.clip(dist * (-1 / (w * .11)), 0, 1)                                 # 0 on the fold, 1 well onto the flap
+    shade = .55 + .45 * cv2.sqrt(curl)                                            # dark in the curl, lighter on the flat
+    flap = cv2.multiply(cv2.addWeighted(_TC[("u8", h, w)], .92, ghost, .08, 0), cv2.merge([shade, shade, shade]), dtype=cv2.CV_8U)
     src_x = 2 * f - xx + 2 * slant * (yy - h / 2)                                 # where each flap pixel came from on the old sheet
-    is_flap = (dist <= 0) & (src_x < w)
-    edge = np.where(src_x >= w, src_x - w, 1e6)                                   # distance beyond the flap's free edge, on the old sheet
-    out = a.astype(np.float32) * (1 - .42 * lift * np.exp(-edge / (w * .018)) * (dist <= 0))[:, :, None]
-    out = np.where(is_flap[:, :, None], flap, out)
-    sh = .55 * lift * np.exp(-np.clip(dist, 0, None) / (w * .035)) + .12 * lift * np.exp(-np.clip(dist, 0, None) / (w * .16))
-    newp = b.astype(np.float32) * (1 - sh)[:, :, None]                            # the curl's shadow on the page beneath
-    out = np.where((dist > 0)[:, :, None], newp, out)
-    hl_ = np.exp(-(dist / 2.2) ** 2) * .5 * lift                                  # thin light line on the fold itself
-    return np.clip(out + hl_[:, :, None] * 60, 0, 255).astype(np.uint8)
+    ka = 1 - .5 * lift * cv2.exp(np.clip(src_x - w, 0, None) * (-1 / (w * .02))) * (src_x >= w)       # the flap's free edge shadows the old sheet
+    out = cv2.multiply(a, cv2.merge([ka, ka, ka]), dtype=cv2.CV_8U)
+    cv2.copyTo(flap, ((dist <= 0) & (src_x < w)).astype(np.uint8), out)
+    kb = 1 - .62 * lift * cv2.exp(np.clip(dist, 0, None) * (-1 / (w * .05)))      # the curl's shadow on the page beneath
+    cv2.copyTo(cv2.multiply(b, cv2.merge([kb, kb, kb]), dtype=cv2.CV_8U), (dist > 0).astype(np.uint8), out)
+    return out
 
 def _tear_masks(h, w):
     """Fixed-seed jagged tear down the sheet: float masks (left piece incl. its white fibre band, fibre band alone, right piece)."""
@@ -68,26 +66,26 @@ def _tear_masks(h, w):
             notes="The tear line is fixed-seed, so it is identical on every render. `flip=True` mirrors it.")
 def tear_away(a, b, p, flip=False):
     if flip: return tear_away(a[:, ::-1], b[:, ::-1], p, False)[:, ::-1]
-    h, w = a.shape[:2]; left, fibre, right, (xt, xb) = _tear_masks(h, w); af = a.astype(np.float32)
-    white = np.float32((250, 248, 242)); lf = fibre[:, :, None]
-    L4 = np.dstack([af * (1 - lf) + white * lf, left * 255]); R4 = np.dstack([af, right * 255])
+    h, w = a.shape[:2]; left, fibre, right, (xt, xb) = _tear_masks(h, w)
     u = ease(clamp(p / .42)); v = clamp((p - .38) / .62); vin = v * v * (3 - 2 * v) * v            # tear runs down, then the pieces leave
+    if p <= 0: return a.copy()
+    if p >= 1: return b.copy()
+    x0, x1 = max(0, int(min(xt, xb) - w * .06)), min(w, int(max(xt, xb) + w * .06))                # the fibre band only lives in this column range
+    La = a.copy(); lf = (fibre[:, x0:x1] * clamp(u * 6))[:, :, None]                               # white torn fibres on the left piece's edge
+    La[:, x0:x1] = (a[:, x0:x1] * (1 - lf) + np.float32((250, 248, 242)) * lf).astype(np.uint8)
     py_ = h * 1.02 * u; px_ = xt + (xb - xt) * u                                                    # the tear front: pieces hinge open about it
     def about(deg, cx, cy, dx, dy):
         M = cv2.getRotationMatrix2D((cx, cy), deg, 1.0); M[0, 2] += dx; M[1, 2] += dy; return M
     ML = about(1.1 * u + 5 * vin, px_, py_, -w * .62 * vin, h * .05 * vin)
     MR = about(-1.6 * u - 13 * vin, px_, py_, w * .10 * vin, h * 1.20 * vin)
-    Lw = cv2.warpAffine(L4, ML, (w, h), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
-    Rw = cv2.warpAffine(R4, MR, (w, h), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
-    la, ra = Lw[:, :, 3] / 255, Rw[:, :, 3] / 255; off = int(8 + 22 * max(u * .5, vin)); 
-    cover = np.maximum(la, ra); sh = _soft(cover, 8, 1.2 + 2.2 * max(u * .4, vin))
+    Lw = cv2.warpAffine(La, ML, (w, h), flags=cv2.INTER_LINEAR); Rw = cv2.warpAffine(a, MR, (w, h), flags=cv2.INTER_LINEAR)
+    la = cv2.warpAffine(left, ML, (w, h), flags=cv2.INTER_LINEAR); ra = cv2.warpAffine(right, MR, (w, h), flags=cv2.INTER_LINEAR)
+    off = int(8 + 22 * max(u * .5, vin)); cover = np.maximum(la, ra); sh = _soft(cover, 8, 1.2 + 2.2 * max(u * .4, vin))
     sh = cv2.warpAffine(sh, np.float32([[1, 0, off * .6], [0, 1, off]]), (w, h), borderMode=cv2.BORDER_REPLICATE)
-    out = b.astype(np.float32) * (1 - .5 * sh * (1 - cover))[:, :, None]
-    out = out * (1 - ra[:, :, None]) + Rw[:, :, :3] * ra[:, :, None]
-    rs = cv2.warpAffine(la, np.float32([[1, 0, 7], [0, 1, 5]]), (w, h)) * .22 * (1 - la)              # the left piece sits on top: a faint shadow on the right one
-    out = out * (1 - (rs * ra)[:, :, None])
-    out = out * (1 - la[:, :, None]) + Lw[:, :, :3] * la[:, :, None]
-    return np.clip(out, 0, 255).astype(np.uint8)
+    rs = cv2.warpAffine(la, np.float32([[1, 0, 7], [0, 1, 5]]), (w, h)) * .22                         # the left piece sits on top: a faint shadow on the right one
+    k1 = 1 - .5 * sh * (1 - cover); k2 = 1 - rs * (1 - la)
+    out = cv2.blendLinear(cv2.multiply(b, cv2.merge([k1, k1, k1]), dtype=cv2.CV_8U), cv2.multiply(Rw, cv2.merge([k2, k2, k2]), dtype=cv2.CV_8U), 1 - ra, ra)
+    return cv2.blendLinear(out, Lw, 1 - la, la)
 
 @transition("fold", dur=1.2, snd="slide", use="Putting an idea away or closing a section: the old sheet folds up panel by panel toward one side like a leaflet (thirds by default, `parts=2` for in half), revealing the new scene.",
             notes="`parts` = 2 or 3 panels. `flip=True` folds toward the right instead of the left.")
@@ -104,7 +102,7 @@ def fold(a, b, p, parts=3, flip=False):
     edge = max(c, int(c + pw_ * cs)) if cs > 0 else c                                              # right-hand limit of the old sheet's stack
     rw = min(w - edge, int(w * .05))
     if rw > 2:                                                                                      # the stack's soft shadow on the new scene
-        ramp = 1 - (.42 * (.45 + .55 * sn)) * np.exp(-np.arange(rw, dtype=np.float32) / (w * .012)); out[:, edge:edge + rw] *= ramp[None, :, None]
+        ramp = 1 - (.42 * (.45 + .55 * sn) * ((1 - u) ** .5 if last else 1)) * np.exp(-np.arange(rw, dtype=np.float32) / (w * .012)); out[:, edge:edge + rw] *= ramp[None, :, None]
     if c > 0:
         out[:, :c] = a[:, :c]
         if k > 0: out[:, c - int(round(pw_)) if c - int(round(pw_)) > 0 else 0:c] = a[:, max(0, c - int(round(pw_))):c]

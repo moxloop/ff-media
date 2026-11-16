@@ -123,7 +123,7 @@ def rolling_counter(base, d, lt, cam, title=("ADD IT", "ALL UP"), label="TOTAL P
 
 
 # ------------------------------------------------------------------ circled_figure
-@component("reveals", "circled_figure", dur=4.5, cam=[(0, 820, 530, 1.14), (1.3, 960, 540, 1.0), (4.5, 960, 540, 1.03)], still=3.8,
+@component("reveals", "circled_figure", dur=4.5, cam=[(0, 820, 490, 1.12), (1.3, 960, 540, 1.0), (4.5, 960, 540, 1.03)], still=3.8,
            use="Single out the one figure the viewer must remember: it lands on paper, gets a marker ring, an arrow and a handwritten note.")
 def circled_figure(base, d, lt, cam, title=("THE NUMBER", "TO WATCH"), label="OVER 20 YEARS", figure="£24,000", note_text="this is the one that matters",
                    footer="Example figure, for illustration", role="o", t_title=.15, t_card=.5, t_figure=1.0, t_ring=1.7, t_note=2.4):

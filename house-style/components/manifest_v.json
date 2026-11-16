@@ -1,0 +1,711 @@
+[
+ {
+  "key": "shorts_hooks/number_transform",
+  "family": "shorts_hooks",
+  "name": "number_transform",
+  "kind": "component",
+  "module": "shorts",
+  "func": "number_transform",
+  "use": "Open a Short on a small everyday figure that counts up into the consequence number on a calculation card, highlighted as it is spoken.",
+  "notes": "",
+  "dur": 5.5,
+  "params": [
+   [
+    "headline",
+    "(('A SMALL SUM', None), ('ADDS UP', 'o'))"
+   ],
+   [
+    "start",
+    "100"
+   ],
+   [
+    "start_top",
+    "'PUT IN'"
+   ],
+   [
+    "start_sub",
+    "'A MONTH'"
+   ],
+   [
+    "end",
+    "30000"
+   ],
+   [
+    "end_top",
+    "'THAT COMES TO'"
+   ],
+   [
+    "end_sub",
+    "'OVER 25 YEARS'"
+   ],
+   [
+    "note_lines",
+    "('example: \u00a3100 x 300', 'months, no growth')"
+   ],
+   [
+    "picture",
+    "'coins'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "t_head",
+    "0.15"
+   ],
+   [
+    "t_card",
+    "0.25"
+   ],
+   [
+    "t_start",
+    "0.5"
+   ],
+   [
+    "t_turn",
+    "1.5"
+   ],
+   [
+    "t_hl",
+    "2.5"
+   ],
+   [
+    "t_pic",
+    "3.0"
+   ],
+   [
+    "t_note",
+    "3.4"
+   ],
+   [
+    "count_dur",
+    "0.9"
+   ]
+  ],
+  "preview": "previews/shorts_hooks__number_transform.mp4",
+  "still": "stills/shorts_hooks__number_transform.jpg",
+  "fit": "PASS",
+  "samples": 28
+ },
+ {
+  "key": "shorts_hooks/two_paths",
+  "family": "shorts_hooks",
+  "name": "two_paths",
+  "kind": "component",
+  "module": "shorts",
+  "func": "two_paths",
+  "use": "Open a Short on a choice: one sum splits down an orange path and a blue path, each ending in its own figure, then the question.",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "headline",
+    "(('SAME MONEY,', None), ('TWO PATHS', 'o'))"
+   ],
+   [
+    "token_text",
+    "'\u00a3100'"
+   ],
+   [
+    "a_label",
+    "'OVERPAY'"
+   ],
+   [
+    "a_value",
+    "'\u00a324,000'"
+   ],
+   [
+    "a_pic",
+    "'house'"
+   ],
+   [
+    "b_label",
+    "'INVEST'"
+   ],
+   [
+    "b_value",
+    "'\u00a331,000'"
+   ],
+   [
+    "b_pic",
+    "'chart'"
+   ],
+   [
+    "a_role",
+    "'o'"
+   ],
+   [
+    "b_role",
+    "'b'"
+   ],
+   [
+    "question",
+    "'which one wins?'"
+   ],
+   [
+    "t_head",
+    "0.15"
+   ],
+   [
+    "t_token",
+    "0.7"
+   ],
+   [
+    "t_a",
+    "1.3"
+   ],
+   [
+    "t_b",
+    "1.6"
+   ],
+   [
+    "t_a_tag",
+    "2.0"
+   ],
+   [
+    "t_b_tag",
+    "2.4"
+   ],
+   [
+    "t_q",
+    "3.4"
+   ]
+  ],
+  "preview": "previews/shorts_hooks__two_paths.mp4",
+  "still": "stills/shorts_hooks__two_paths.jpg",
+  "fit": "PASS",
+  "samples": 30
+ },
+ {
+  "key": "shorts_hooks/myth_vs_reality",
+  "family": "shorts_hooks",
+  "name": "myth_vs_reality",
+  "kind": "component",
+  "module": "shorts",
+  "func": "myth_vs_reality",
+  "use": "Open a Short by striking out a common belief, then drop in the real figure highlighted underneath.",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "myth_kicker",
+    "'PEOPLE SAY'"
+   ],
+   [
+    "myth",
+    "'YOU NEED A BIG LUMP SUM TO START'"
+   ],
+   [
+    "myth_tag",
+    "'MYTH'"
+   ],
+   [
+    "reality_tag",
+    "'REALITY'"
+   ],
+   [
+    "reality_lead",
+    "'YOU CAN START WITH'"
+   ],
+   [
+    "figure",
+    "'\u00a325'"
+   ],
+   [
+    "figure_sub",
+    "'A MONTH'"
+   ],
+   [
+    "note_text",
+    "'example figure'"
+   ],
+   [
+    "picture",
+    "'piggybank'"
+   ],
+   [
+    "role",
+    "'g'"
+   ],
+   [
+    "t_card",
+    "0.15"
+   ],
+   [
+    "t_myth",
+    "0.35"
+   ],
+   [
+    "t_cross",
+    "1.2"
+   ],
+   [
+    "t_tag",
+    "1.6"
+   ],
+   [
+    "t_reality",
+    "2.1"
+   ],
+   [
+    "t_lead",
+    "2.3"
+   ],
+   [
+    "t_fig",
+    "2.6"
+   ],
+   [
+    "t_pic",
+    "3.1"
+   ],
+   [
+    "t_note",
+    "3.8"
+   ]
+  ],
+  "preview": "previews/shorts_hooks__myth_vs_reality.mp4",
+  "still": "stills/shorts_hooks__myth_vs_reality.jpg",
+  "fit": "PASS",
+  "samples": 30
+ },
+ {
+  "key": "shorts_comparisons/versus_card",
+  "family": "shorts_comparisons",
+  "name": "versus_card",
+  "kind": "component",
+  "module": "shorts",
+  "func": "versus_card",
+  "use": "Compare two options head to head in a Short: two stacked cards with a VS disc between, the winner ringed and tagged.",
+  "notes": "",
+  "dur": 5.5,
+  "params": [
+   [
+    "a_label",
+    "'OPTION A'"
+   ],
+   [
+    "a_value",
+    "24000"
+   ],
+   [
+    "a_sub",
+    "'AFTER 10 YEARS'"
+   ],
+   [
+    "a_pic",
+    "'house'"
+   ],
+   [
+    "a_role",
+    "'o'"
+   ],
+   [
+    "b_label",
+    "'OPTION B'"
+   ],
+   [
+    "b_value",
+    "31000"
+   ],
+   [
+    "b_sub",
+    "'AFTER 10 YEARS'"
+   ],
+   [
+    "b_pic",
+    "'chart'"
+   ],
+   [
+    "b_role",
+    "'b'"
+   ],
+   [
+    "winner",
+    "'b'"
+   ],
+   [
+    "win_text",
+    "'AHEAD'"
+   ],
+   [
+    "t_a",
+    "0.15"
+   ],
+   [
+    "t_b",
+    "0.45"
+   ],
+   [
+    "t_vs",
+    "0.9"
+   ],
+   [
+    "t_fig",
+    "1.2"
+   ],
+   [
+    "t_win",
+    "2.9"
+   ],
+   [
+    "count_dur",
+    "0.9"
+   ]
+  ],
+  "preview": "previews/shorts_comparisons__versus_card.mp4",
+  "still": "stills/shorts_comparisons__versus_card.jpg",
+  "fit": "PASS",
+  "samples": 28
+ },
+ {
+  "key": "shorts_comparisons/two_jars",
+  "family": "shorts_comparisons",
+  "name": "two_jars",
+  "kind": "component",
+  "module": "shorts",
+  "func": "two_jars",
+  "use": "Compare two end amounts in a Short as two jars filling to their true proportions, with the difference written underneath.",
+  "notes": "",
+  "dur": 6.0,
+  "params": [
+   [
+    "headline",
+    "(('SAME MONEY IN,', None), ('TWO JARS', 'b'))"
+   ],
+   [
+    "a_label",
+    "'OVERPAY'"
+   ],
+   [
+    "a_value",
+    "24000"
+   ],
+   [
+    "a_role",
+    "'o'"
+   ],
+   [
+    "b_label",
+    "'INVEST'"
+   ],
+   [
+    "b_value",
+    "31000"
+   ],
+   [
+    "b_role",
+    "'b'"
+   ],
+   [
+    "note_text",
+    "'\u00a37,000 more in this jar'"
+   ],
+   [
+    "note_side",
+    "'b'"
+   ],
+   [
+    "t_head",
+    "0.15"
+   ],
+   [
+    "t_jars",
+    "0.9"
+   ],
+   [
+    "t_fill",
+    "1.5"
+   ],
+   [
+    "t_note",
+    "3.6"
+   ],
+   [
+    "fill_dur",
+    "1.3"
+   ]
+  ],
+  "preview": "previews/shorts_comparisons__two_jars.mp4",
+  "still": "stills/shorts_comparisons__two_jars.jpg",
+  "fit": "PASS",
+  "samples": 30
+ },
+ {
+  "key": "shorts_comparisons/split_screen",
+  "family": "shorts_comparisons",
+  "name": "split_screen",
+  "kind": "component",
+  "module": "shorts",
+  "func": "split_screen",
+  "use": "Set two options against each other in a Short as two torn paper halves, orange above and blue below, one figure each.",
+  "notes": "",
+  "dur": 5.5,
+  "params": [
+   [
+    "a_label",
+    "'OVERPAY'"
+   ],
+   [
+    "a_value",
+    "'\u00a324,000'"
+   ],
+   [
+    "a_sub",
+    "'INTEREST SAVED'"
+   ],
+   [
+    "a_pic",
+    "'house'"
+   ],
+   [
+    "a_role",
+    "'o'"
+   ],
+   [
+    "b_label",
+    "'INVEST'"
+   ],
+   [
+    "b_value",
+    "'\u00a331,000'"
+   ],
+   [
+    "b_sub",
+    "'POT AT THE END'"
+   ],
+   [
+    "b_pic",
+    "'chart'"
+   ],
+   [
+    "b_role",
+    "'b'"
+   ],
+   [
+    "t_split",
+    "0.1"
+   ],
+   [
+    "t_a",
+    "0.6"
+   ],
+   [
+    "t_a_fig",
+    "0.9"
+   ],
+   [
+    "t_b",
+    "1.7"
+   ],
+   [
+    "t_b_fig",
+    "2.0"
+   ],
+   [
+    "t_mark",
+    "3.2"
+   ]
+  ],
+  "preview": "previews/shorts_comparisons__split_screen.mp4",
+  "still": "stills/shorts_comparisons__split_screen.jpg",
+  "fit": "PASS",
+  "samples": 28
+ },
+ {
+  "key": "shorts_reveals/stamp",
+  "family": "shorts_reveals",
+  "name": "stamp",
+  "kind": "component",
+  "module": "shorts",
+  "func": "stamp",
+  "use": "Land a verdict on a figure in a Short: the number sits on a card and a rubber-stamp word thumps down beneath it.",
+  "notes": "",
+  "dur": 4.5,
+  "params": [
+   [
+    "label",
+    "'TOTAL INTEREST'"
+   ],
+   [
+    "value",
+    "'\u00a324,000'"
+   ],
+   [
+    "sub",
+    "'OVER 25 YEARS'"
+   ],
+   [
+    "stamp_text",
+    "'SAVED'"
+   ],
+   [
+    "stamp_role",
+    "'g'"
+   ],
+   [
+    "note_text",
+    "'example figure'"
+   ],
+   [
+    "t_card",
+    "0.15"
+   ],
+   [
+    "t_fig",
+    "0.4"
+   ],
+   [
+    "t_stamp",
+    "1.9"
+   ],
+   [
+    "t_note",
+    "2.8"
+   ],
+   [
+    "stamp_rot",
+    "-8"
+   ]
+  ],
+  "preview": "previews/shorts_reveals__stamp.mp4",
+  "still": "stills/shorts_reveals__stamp.jpg",
+  "fit": "PASS",
+  "samples": 23
+ },
+ {
+  "key": "shorts_reveals/rolling_counter",
+  "family": "shorts_reveals",
+  "name": "rolling_counter",
+  "kind": "component",
+  "module": "shorts",
+  "func": "rolling_counter",
+  "use": "Reveal a total in a Short with tension: odometer digits roll and lock, left to right, onto the final figure.",
+  "notes": "",
+  "dur": 5.0,
+  "params": [
+   [
+    "label",
+    "'TOTAL INTEREST'"
+   ],
+   [
+    "value",
+    "48250"
+   ],
+   [
+    "sub",
+    "'OVER 25 YEARS'"
+   ],
+   [
+    "note_lines",
+    "(\"that's about\", '\u00a3160 a month')"
+   ],
+   [
+    "picture",
+    "'calculator'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "t_label",
+    "0.15"
+   ],
+   [
+    "t_panel",
+    "0.3"
+   ],
+   [
+    "t_roll",
+    "0.6"
+   ],
+   [
+    "t_sub",
+    "2.4"
+   ],
+   [
+    "t_pic",
+    "2.8"
+   ],
+   [
+    "t_note",
+    "3.1"
+   ],
+   [
+    "roll_dur",
+    "1.7"
+   ]
+  ],
+  "preview": "previews/shorts_reveals__rolling_counter.mp4",
+  "still": "stills/shorts_reveals__rolling_counter.jpg",
+  "fit": "PASS",
+  "samples": 25
+ },
+ {
+  "key": "shorts_reveals/circled_figure",
+  "family": "shorts_reveals",
+  "name": "circled_figure",
+  "kind": "component",
+  "module": "shorts",
+  "func": "circled_figure",
+  "use": "Single out one figure in a Short: it lands big, a marker ring is drawn round it and a handwritten note points at it.",
+  "notes": "",
+  "dur": 5.0,
+  "params": [
+   [
+    "headline",
+    "((\"THAT'S AN EXTRA\", None),)"
+   ],
+   [
+    "value",
+    "'\u00a37,000'"
+   ],
+   [
+    "sub",
+    "'OVER 25 YEARS'"
+   ],
+   [
+    "note_lines",
+    "('more than', 'you put in')"
+   ],
+   [
+    "picture",
+    "'jar'"
+   ],
+   [
+    "role",
+    "'o'"
+   ],
+   [
+    "t_head",
+    "0.15"
+   ],
+   [
+    "t_fig",
+    "0.6"
+   ],
+   [
+    "t_ring",
+    "1.5"
+   ],
+   [
+    "t_sub",
+    "2.0"
+   ],
+   [
+    "t_note",
+    "2.7"
+   ],
+   [
+    "t_pic",
+    "3.1"
+   ]
+  ],
+  "preview": "previews/shorts_reveals__circled_figure.mp4",
+  "still": "stills/shorts_reveals__circled_figure.jpg",
+  "fit": "PASS",
+  "samples": 25
+ }
+]
