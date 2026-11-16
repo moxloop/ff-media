@@ -1,236 +1,156 @@
 [
  {
-  "key": "charts/line_race",
-  "family": "charts",
-  "name": "line_race",
+  "key": "endcards/recap_checklist",
+  "family": "endcards",
+  "name": "recap_checklist",
   "kind": "component",
-  "module": "charts",
-  "func": "line_race",
-  "use": "Two (or three) options compared over time: the lines race left to right together, each with its label riding the tip, and the one that ends ahead gets the big end value and a handwritten callout.",
+  "module": "endcards",
+  "func": "recap_checklist",
+  "use": "The recap before the end card: three short lines, each ticked off as the narrator says it, with its key figure picked out.",
   "notes": "",
-  "dur": 6.0,
+  "dur": 5.5,
   "params": [
    [
-    "title",
-    "'WHICH ONE'"
+    "headline",
+    "'THE SHORT'"
    ],
    [
-    "title_key",
-    "'ENDS AHEAD?'"
+    "key_word",
+    "'VERSION'"
    ],
    [
-    "key_role",
-    "'b'"
-   ],
-   [
-    "series",
-    "(('PLAN A', 'b', (0, 12, 8, 30, 24, 52, 46, 76, 90, 80, 58, 64, 50, 60, 88, 80, 118, 110, 150, 142, 200)), ('PLAN B', 'o', (0, 8, 15, 22, 30, 38, 45, 52, 60, 68, 75, 82, 90, 98, 105, 112, 120, 128, 135, 142, 150)))"
-   ],
-   [
-    "fmt",
-    "None"
-   ],
-   [
-    "winner",
-    "None"
-   ],
-   [
-    "callout",
-    "'ends ahead'"
-   ],
-   [
-    "x_label",
-    "'TIME'"
-   ],
-   [
-    "label",
-    "'Illustration, not real returns'"
-   ],
-   [
-    "t_title",
-    "0.2"
-   ],
-   [
-    "t_panel",
-    "0.5"
-   ],
-   [
-    "t_race",
-    "1.2"
-   ],
-   [
-    "race_dur",
-    "2.6"
-   ],
-   [
-    "t_end",
-    "None"
-   ],
-   [
-    "t_callout",
-    "None"
-   ]
-  ],
-  "preview": "previews/charts__line_race.mp4",
-  "still": "stills/charts__line_race.jpg",
-  "fit": "PASS",
-  "samples": 30
- },
- {
-  "key": "charts/waterfall",
-  "family": "charts",
-  "name": "waterfall",
-  "kind": "component",
-  "module": "charts",
-  "func": "waterfall",
-  "use": "Fees, charges or deductions eating into a figure: a whole starting bar, each deduction as an orange block stepping down on its cue, ending on the green 'what you keep' bar with the one big number.",
-  "notes": "",
-  "dur": 6.0,
-  "params": [
-   [
-    "title",
-    "'WHERE THE'"
-   ],
-   [
-    "title_key",
-    "'MONEY GOES'"
-   ],
-   [
-    "key_role",
-    "'o'"
-   ],
-   [
-    "start",
-    "('BEFORE FEES', 1000)"
-   ],
-   [
-    "steps",
-    "(('FUND FEE', 150), ('PLATFORM FEE', 100), ('ADVICE FEE', 250))"
-   ],
-   [
-    "end_label",
-    "'WHAT YOU KEEP'"
-   ],
-   [
-    "end_role",
+    "hk",
     "'g'"
    ],
    [
-    "start_role",
-    "'k'"
+    "lines",
+    "(('Paying in', '\u00a3100', 'a month adds up', 'o'), ('Left for', '10 years', 'it has time to grow', 'b'), ('At an example', '5%', 'that is the gap', 'g'))"
    ],
    [
-    "fmt",
-    "None"
+    "key_line",
+    "2"
    ],
    [
-    "aside",
-    "'half of it gone'"
+    "side_pic",
+    "'scale'"
    ],
    [
-    "label",
-    "'Illustration, not real returns'"
+    "t_head",
+    "0.15"
    ],
    [
-    "t_title",
-    "0.2"
+    "t_sheet",
+    "0.6"
    ],
    [
-    "t_panel",
-    "0.5"
-   ],
-   [
-    "t_start",
-    "1.1"
-   ],
-   [
-    "t_steps",
-    "None"
-   ],
-   [
-    "t_end",
-    "None"
-   ],
-   [
-    "t_aside",
-    "None"
+    "t_lines",
+    "(1.2, 2.2, 3.2)"
    ]
   ],
-  "preview": "previews/charts__waterfall.mp4",
-  "still": "stills/charts__waterfall.jpg",
+  "preview": "previews/endcards__recap_checklist.mp4",
+  "still": "stills/endcards__recap_checklist.jpg",
   "fit": "PASS",
-  "samples": 30
+  "samples": 28
  },
  {
-  "key": "charts/timeline_markers",
-  "family": "charts",
-  "name": "timeline_markers",
+  "key": "endcards/recap_cards",
+  "family": "endcards",
+  "name": "recap_cards",
   "kind": "component",
-  "module": "charts",
-  "func": "timeline_markers",
-  "use": "A repayment or balance timeline: the year track unrolls, two to four markers pop on their cues with handwritten notes, and the gap between two of them (e.g. years saved) is highlighted as the one big figure.",
+  "module": "endcards",
+  "func": "recap_cards",
+  "use": "A three-point recap as numbered cards, each with one takeaway and one figure, ending on the handwritten limitation.",
   "notes": "",
   "dur": 6.0,
   "params": [
    [
-    "title",
-    "'THE FINISH LINE'"
+    "headline",
+    "'THREE THINGS'"
    ],
    [
-    "title_key",
-    "'MOVES'"
+    "key_word",
+    "'TO KEEP'"
    ],
    [
-    "key_role",
+    "hk",
     "'o'"
    ],
    [
-    "ticks",
-    "('0', '5', '10', '15', '20', '25')"
+    "cards",
+    "(('Small amounts add up over time', '\u00a3100', 'o'), ('Time does most of the work', '10 YRS', 'b'), ('The rate decides who wins', '5%', 'g'))"
    ],
    [
-    "unit",
-    "'YEARS'"
+    "limit_note",
+    "'\u2026if returns beat 5% after fees'"
    ],
    [
-    "markers",
-    "((0.0, 'TODAY', 'n', 'start here'), (0.86, 'PAID OFF', 'o', 'with overpayments'), (1.0, 'ORIGINAL END', 'm', 'the plan'))"
+    "t_head",
+    "0.15"
    ],
    [
-    "span",
-    "(1, 2, '3\u00bd YEARS EARLY', 'g')"
+    "t_cards",
+    "(0.8, 1.7, 2.6)"
    ],
    [
-    "label",
-    "'Illustration, not real figures'"
-   ],
-   [
-    "t_title",
-    "0.2"
-   ],
-   [
-    "t_panel",
-    "0.5"
-   ],
-   [
-    "t_track",
-    "0.9"
-   ],
-   [
-    "track_dur",
-    "1.0"
-   ],
-   [
-    "t_markers",
-    "(1.1, 2.3, 2.9)"
-   ],
-   [
-    "t_span",
-    "3.7"
+    "t_note",
+    "3.8"
    ]
   ],
-  "preview": "previews/charts__timeline_markers.mp4",
-  "still": "stills/charts__timeline_markers.jpg",
+  "preview": "previews/endcards__recap_cards.mp4",
+  "still": "stills/endcards__recap_cards.jpg",
+  "fit": "PASS",
+  "samples": 30
+ },
+ {
+  "key": "endcards/end_card",
+  "family": "endcards",
+  "name": "end_card",
+  "kind": "component",
+  "module": "endcards",
+  "func": "end_card",
+  "use": "The plain end screen for the last 12 s: left half empty for YouTube's video element, logo and subscribe line on the right.",
+  "notes": "Preview is 6 s of a 12 s card: hold the final state for the rest. Nothing is ever drawn at x < 960. Register/play it with the top-left logo hidden.",
+  "dur": 6.0,
+  "params": [
+   [
+    "cta",
+    "'Click the logo to subscribe'"
+   ],
+   [
+    "line1",
+    "'Narrated with an AI voice'"
+   ],
+   [
+    "line2",
+    "'General information, not financial advice'"
+   ],
+   [
+    "logo_w",
+    "560"
+   ],
+   [
+    "cx",
+    "1420"
+   ],
+   [
+    "t_logo",
+    "0.3"
+   ],
+   [
+    "t_cta",
+    "1.1"
+   ],
+   [
+    "t_arrow",
+    "2.0"
+   ],
+   [
+    "t_lines",
+    "2.7"
+   ]
+  ],
+  "preview": "previews/endcards__end_card.mp4",
+  "still": "stills/endcards__end_card.jpg",
   "fit": "PASS",
   "samples": 30
  }
